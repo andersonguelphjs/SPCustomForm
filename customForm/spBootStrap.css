@@ -1,0 +1,4172 @@
+﻿/*!
+ * Bootstrap v3.2.0 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter,  Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ *//*! normalize.css v3.0.1 | MIT License | git.io/normalize */html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%}
+#spBootstrap body {
+    margin: 0;
+}
+#spBootstrap article, #spBootstrap aside, #spBootstrap details, #spBootstrap figcaption, #spBootstrap figure, #spBootstrap footer, #spBootstrap header, #spBootstrap hgroup, #spBootstrap main, #spBootstrap nav, #spBootstrap section, #spBootstrap summary {
+    display: block;
+}
+#spBootstrap audio, #spBootstrap canvas, #spBootstrap progress, #spBootstrap video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+#spBootstrap audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+#spBootstrap [hidden], #spBootstrap template {
+    display: none;
+}
+#spBootstrap a {
+    background: 0 0;
+}
+#spBootstrap a:active,#spBootstrap  a:hover {
+    outline: 0;
+}
+#spBootstrap abbr[title] {
+    border-bottom: 1px dotted;
+}
+#spBootstrap b, #spBootstrap strong {
+    font-weight: 700;
+}
+#spBootstrap dfn {
+    font-style: italic;
+}
+#spBootstrap h1 {
+    margin: .67em 0;
+    font-size: 2em;
+}
+#spBootstrap mark {
+    color: #000;
+    background: #ff0;
+}
+#spBootstrap small {
+    font-size: 80%}
+#spBootstrap sub, #spBootstrap sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+}
+#spBootstrap sup {
+    top: -.5em;
+}
+#spBootstrap sub {
+    bottom: -.25em;
+}
+#spBootstrap img {
+    border: 0;
+}
+#spBootstrap svg:not(:root) {
+    overflow: hidden;
+}
+#spBootstrap figure {
+    margin: 1em 40px;
+}
+#spBootstrap hr {
+    height: 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+#spBootstrap pre {
+    overflow: auto;
+}
+#spBootstrap code, #spBootstrap kbd, #spBootstrap pre, #spBootstrap samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+#spBootstrap button, #spBootstrap input, #spBootstrap optgroup, #spBootstrap select, #spBootstrap textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+#spBootstrap button {
+    overflow: visible;
+}
+#spBootstrap button, #spBootstrap select {
+    text-transform: none;
+}
+#spBootstrap button, #spBootstrap tml input[type=button], #spBootstrap input[type=reset], #spBootstrap input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+#spBootstrap button[disabled], #spBootstrap html input[disabled] {
+    cursor: default;
+}
+#spBootstrap button::-moz-focus-inner, #spBootstrap input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+#spBootstrap input {
+    line-height: normal;
+}
+#spBootstrap input[type=checkbox], #spBootstrap input[type=radio] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+#spBootstrap input[type=number]::-webkit-inner-spin-button, #spBootstrap input[type=number]::-webkit-outer-spin-button {
+    height: auto;
+}
+#spBootstrap input[type=search] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: textfield;
+}
+#spBootstrap input[type=search]::-webkit-search-cancel-button, #spBootstrap input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+#spBootstrap fieldset {
+    padding: .35em .625em .75em;
+    margin: 0 2px;
+    border: 1px solid silver;
+}
+#spBootstrap legend {
+    padding: 0;
+    border: 0;
+}
+#spBootstrap textarea {
+    overflow: auto;
+}
+#spBootstrap optgroup {
+    font-weight: 700;
+}
+#spBootstrap table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+#spBootstrap td, #spBootstrap th {
+    padding: 0;
+}
+@media print {
+    #spBootstrap * {
+    color: #000!important;
+    text-shadow: none!important;
+    background: transparent!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+#spBootstrap a, #spBootstrap a:visited {
+    text-decoration: underline;
+}
+#spBootstrap a[href]:after {
+    content: " (" attr(href) ")"}
+#spBootstrap abbr[title]:after {
+    content: " (" attr(title) ")"}
+#spBootstrap a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: ""}
+#spBootstrap pre, #spBootstrap blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+}
+#spBootstrap thead {
+    display: table-header-group;
+}
+#spBootstrap tr, #spBootstrap img {
+    page-break-inside: avoid;
+}
+#spBootstrap img {
+    max-width: 100%!important;
+}
+#spBootstrap p, #spBootstrap h2, #spBootstrap h3 {
+    orphans: 3;
+    widows: 3;
+}
+#spBootstrap h2, #spBootstrap h3 {
+    page-break-after: avoid;
+}
+#spBootstrap select {
+    background: #fff!important;
+}  #spBootstrap .navbar {
+    display: none;
+}  #spBootstrap .table td,#spBootstrap .table th {
+    background-color: #fff!important;
+}  #spBootstrap .btn>.caret,#spBootstrap .dropup>.btn>.caret {
+    border-top-color: #000!important;
+}  #spBootstrap .label {
+    border: 1px solid #000;
+}  #spBootstrap .table {
+    border-collapse: collapse!important;
+}  #spBootstrap .table-bordered th,#spBootstrap .table-bordered td {
+    border: 1px solid #ddd!important;
+}
+}@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url(../fonts/glyphicons-halflings-regular.eot);
+    src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/glyphicons-halflings-regular.woff) format('woff'), url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg');
+}  #spBootstrap .glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}  #spBootstrap .glyphicon-asterisk:before {
+    content: "\2a"}  #spBootstrap .glyphicon-plus:before {
+    content: "\2b"}  #spBootstrap .glyphicon-euro:before {
+    content: "\20ac"}  #spBootstrap .glyphicon-minus:before {
+    content: "\2212"}  #spBootstrap .glyphicon-cloud:before {
+    content: "\2601"}  #spBootstrap .glyphicon-envelope:before {
+    content: "\2709"}  #spBootstrap .glyphicon-pencil:before {
+    content: "\270f"}  #spBootstrap .glyphicon-glass:before {
+    content: "\e001"}  #spBootstrap .glyphicon-music:before {
+    content: "\e002"}  #spBootstrap .glyphicon-search:before {
+    content: "\e003"}  #spBootstrap .glyphicon-heart:before {
+    content: "\e005"}  #spBootstrap .glyphicon-star:before {
+    content: "\e006"}  #spBootstrap .glyphicon-star-empty:before {
+    content: "\e007"}  #spBootstrap .glyphicon-user:before {
+    content: "\e008"}  #spBootstrap .glyphicon-film:before {
+    content: "\e009"}  #spBootstrap .glyphicon-th-large:before {
+    content: "\e010"}  #spBootstrap .glyphicon-th:before {
+    content: "\e011"}  #spBootstrap .glyphicon-th-list:before {
+    content: "\e012"}  #spBootstrap .glyphicon-ok:before {
+    content: "\e013"}  #spBootstrap .glyphicon-remove:before {
+    content: "\e014"}  #spBootstrap .glyphicon-zoom-in:before {
+    content: "\e015"}  #spBootstrap .glyphicon-zoom-out:before {
+    content: "\e016"}  #spBootstrap .glyphicon-off:before {
+    content: "\e017"}  #spBootstrap .glyphicon-signal:before {
+    content: "\e018"}  #spBootstrap .glyphicon-cog:before {
+    content: "\e019"}  #spBootstrap .glyphicon-trash:before {
+    content: "\e020"}  #spBootstrap .glyphicon-home:before {
+    content: "\e021"}  #spBootstrap .glyphicon-file:before {
+    content: "\e022"}  #spBootstrap .glyphicon-time:before {
+    content: "\e023"}  #spBootstrap .glyphicon-road:before {
+    content: "\e024"}  #spBootstrap .glyphicon-download-alt:before {
+    content: "\e025"}  #spBootstrap .glyphicon-download:before {
+    content: "\e026"}  #spBootstrap .glyphicon-upload:before {
+    content: "\e027"}  #spBootstrap .glyphicon-inbox:before {
+    content: "\e028"}  #spBootstrap .glyphicon-play-circle:before {
+    content: "\e029"}  #spBootstrap .glyphicon-repeat:before {
+    content: "\e030"}  #spBootstrap .glyphicon-refresh:before {
+    content: "\e031"}  #spBootstrap .glyphicon-list-alt:before {
+    content: "\e032"}  #spBootstrap .glyphicon-lock:before {
+    content: "\e033"}  #spBootstrap .glyphicon-flag:before {
+    content: "\e034"}  #spBootstrap .glyphicon-headphones:before {
+    content: "\e035"}  #spBootstrap .glyphicon-volume-off:before {
+    content: "\e036"}  #spBootstrap .glyphicon-volume-down:before {
+    content: "\e037"}  #spBootstrap .glyphicon-volume-up:before {
+    content: "\e038"}  #spBootstrap .glyphicon-qrcode:before {
+    content: "\e039"}  #spBootstrap .glyphicon-barcode:before {
+    content: "\e040"}  #spBootstrap .glyphicon-tag:before {
+    content: "\e041"}  #spBootstrap .glyphicon-tags:before {
+    content: "\e042"}  #spBootstrap .glyphicon-book:before {
+    content: "\e043"}  #spBootstrap .glyphicon-bookmark:before {
+    content: "\e044"}  #spBootstrap .glyphicon-print:before {
+    content: "\e045"}  #spBootstrap .glyphicon-camera:before {
+    content: "\e046"}  #spBootstrap .glyphicon-font:before {
+    content: "\e047"}  #spBootstrap .glyphicon-bold:before {
+    content: "\e048"}  #spBootstrap .glyphicon-italic:before {
+    content: "\e049"}  #spBootstrap .glyphicon-text-height:before {
+    content: "\e050"}  #spBootstrap .glyphicon-text-width:before {
+    content: "\e051"}  #spBootstrap .glyphicon-align-left:before {
+    content: "\e052"}  #spBootstrap .glyphicon-align-center:before {
+    content: "\e053"}  #spBootstrap .glyphicon-align-right:before {
+    content: "\e054"}  #spBootstrap .glyphicon-align-justify:before {
+    content: "\e055"}  #spBootstrap .glyphicon-list:before {
+    content: "\e056"}  #spBootstrap .glyphicon-indent-left:before {
+    content: "\e057"}  #spBootstrap .glyphicon-indent-right:before {
+    content: "\e058"}  #spBootstrap .glyphicon-facetime-video:before {
+    content: "\e059"}  #spBootstrap .glyphicon-picture:before {
+    content: "\e060"}  #spBootstrap .glyphicon-map-marker:before {
+    content: "\e062"}  #spBootstrap .glyphicon-adjust:before {
+    content: "\e063"}  #spBootstrap .glyphicon-tint:before {
+    content: "\e064"}  #spBootstrap .glyphicon-edit:before {
+    content: "\e065"}  #spBootstrap .glyphicon-share:before {
+    content: "\e066"}  #spBootstrap .glyphicon-check:before {
+    content: "\e067"}  #spBootstrap .glyphicon-move:before {
+    content: "\e068"}  #spBootstrap .glyphicon-step-backward:before {
+    content: "\e069"}  #spBootstrap .glyphicon-fast-backward:before {
+    content: "\e070"}  #spBootstrap .glyphicon-backward:before {
+    content: "\e071"}  #spBootstrap .glyphicon-play:before {
+    content: "\e072"}  #spBootstrap .glyphicon-pause:before {
+    content: "\e073"}  #spBootstrap .glyphicon-stop:before {
+    content: "\e074"}  #spBootstrap .glyphicon-forward:before {
+    content: "\e075"}  #spBootstrap .glyphicon-fast-forward:before {
+    content: "\e076"}  #spBootstrap .glyphicon-step-forward:before {
+    content: "\e077"}  #spBootstrap .glyphicon-eject:before {
+    content: "\e078"}  #spBootstrap .glyphicon-chevron-left:before {
+    content: "\e079"}  #spBootstrap .glyphicon-chevron-right:before {
+    content: "\e080"}  #spBootstrap .glyphicon-plus-sign:before {
+    content: "\e081"}  #spBootstrap .glyphicon-minus-sign:before {
+    content: "\e082"}  #spBootstrap .glyphicon-remove-sign:before {
+    content: "\e083"}  #spBootstrap .glyphicon-ok-sign:before {
+    content: "\e084"}  #spBootstrap .glyphicon-question-sign:before {
+    content: "\e085"}  #spBootstrap .glyphicon-info-sign:before {
+    content: "\e086"}  #spBootstrap .glyphicon-screenshot:before {
+    content: "\e087"}  #spBootstrap .glyphicon-remove-circle:before {
+    content: "\e088"}  #spBootstrap .glyphicon-ok-circle:before {
+    content: "\e089"}  #spBootstrap .glyphicon-ban-circle:before {
+    content: "\e090"}  #spBootstrap .glyphicon-arrow-left:before {
+    content: "\e091"}  #spBootstrap .glyphicon-arrow-right:before {
+    content: "\e092"}  #spBootstrap .glyphicon-arrow-up:before {
+    content: "\e093"}  #spBootstrap .glyphicon-arrow-down:before {
+    content: "\e094"}  #spBootstrap .glyphicon-share-alt:before {
+    content: "\e095"}  #spBootstrap .glyphicon-resize-full:before {
+    content: "\e096"}  #spBootstrap .glyphicon-resize-small:before {
+    content: "\e097"}  #spBootstrap .glyphicon-exclamation-sign:before {
+    content: "\e101"}  #spBootstrap .glyphicon-gift:before {
+    content: "\e102"}  #spBootstrap .glyphicon-leaf:before {
+    content: "\e103"}  #spBootstrap .glyphicon-fire:before {
+    content: "\e104"}  #spBootstrap .glyphicon-eye-open:before {
+    content: "\e105"}  #spBootstrap .glyphicon-eye-close:before {
+    content: "\e106"}  #spBootstrap .glyphicon-warning-sign:before {
+    content: "\e107"}  #spBootstrap .glyphicon-plane:before {
+    content: "\e108"}  #spBootstrap .glyphicon-calendar:before {
+    content: "\e109"}  #spBootstrap .glyphicon-random:before {
+    content: "\e110"}  #spBootstrap .glyphicon-comment:before {
+    content: "\e111"}  #spBootstrap .glyphicon-magnet:before {
+    content: "\e112"}  #spBootstrap .glyphicon-chevron-up:before {
+    content: "\e113"}  #spBootstrap .glyphicon-chevron-down:before {
+    content: "\e114"}  #spBootstrap .glyphicon-retweet:before {
+    content: "\e115"}  #spBootstrap .glyphicon-shopping-cart:before {
+    content: "\e116"}  #spBootstrap .glyphicon-folder-close:before {
+    content: "\e117"}  #spBootstrap .glyphicon-folder-open:before {
+    content: "\e118"}  #spBootstrap .glyphicon-resize-vertical:before {
+    content: "\e119"}  #spBootstrap .glyphicon-resize-horizontal:before {
+    content: "\e120"}  #spBootstrap .glyphicon-hdd:before {
+    content: "\e121"}  #spBootstrap .glyphicon-bullhorn:before {
+    content: "\e122"}  #spBootstrap .glyphicon-bell:before {
+    content: "\e123"}  #spBootstrap .glyphicon-certificate:before {
+    content: "\e124"}  #spBootstrap .glyphicon-thumbs-up:before {
+    content: "\e125"}  #spBootstrap .glyphicon-thumbs-down:before {
+    content: "\e126"}  #spBootstrap .glyphicon-hand-right:before {
+    content: "\e127"}  #spBootstrap .glyphicon-hand-left:before {
+    content: "\e128"}  #spBootstrap .glyphicon-hand-up:before {
+    content: "\e129"}  #spBootstrap .glyphicon-hand-down:before {
+    content: "\e130"}  #spBootstrap .glyphicon-circle-arrow-right:before {
+    content: "\e131"}  #spBootstrap .glyphicon-circle-arrow-left:before {
+    content: "\e132"}  #spBootstrap .glyphicon-circle-arrow-up:before {
+    content: "\e133"}  #spBootstrap .glyphicon-circle-arrow-down:before {
+    content: "\e134"}  #spBootstrap .glyphicon-globe:before {
+    content: "\e135"}  #spBootstrap .glyphicon-wrench:before {
+    content: "\e136"}  #spBootstrap .glyphicon-tasks:before {
+    content: "\e137"}  #spBootstrap .glyphicon-filter:before {
+    content: "\e138"}  #spBootstrap .glyphicon-briefcase:before {
+    content: "\e139"}  #spBootstrap .glyphicon-fullscreen:before {
+    content: "\e140"}  #spBootstrap .glyphicon-dashboard:before {
+    content: "\e141"}  #spBootstrap .glyphicon-paperclip:before {
+    content: "\e142"}  #spBootstrap .glyphicon-heart-empty:before {
+    content: "\e143"}  #spBootstrap .glyphicon-link:before {
+    content: "\e144"}  #spBootstrap .glyphicon-phone:before {
+    content: "\e145"}  #spBootstrap .glyphicon-pushpin:before {
+    content: "\e146"}  #spBootstrap .glyphicon-usd:before {
+    content: "\e148"}  #spBootstrap .glyphicon-gbp:before {
+    content: "\e149"}  #spBootstrap .glyphicon-sort:before {
+    content: "\e150"}  #spBootstrap .glyphicon-sort-by-alphabet:before {
+    content: "\e151"}  #spBootstrap .glyphicon-sort-by-alphabet-alt:before {
+    content: "\e152"}  #spBootstrap .glyphicon-sort-by-order:before {
+    content: "\e153"}  #spBootstrap .glyphicon-sort-by-order-alt:before {
+    content: "\e154"}  #spBootstrap .glyphicon-sort-by-attributes:before {
+    content: "\e155"}  #spBootstrap .glyphicon-sort-by-attributes-alt:before {
+    content: "\e156"}  #spBootstrap .glyphicon-unchecked:before {
+    content: "\e157"}  #spBootstrap .glyphicon-expand:before {
+    content: "\e158"}  #spBootstrap .glyphicon-collapse-down:before {
+    content: "\e159"}  #spBootstrap .glyphicon-collapse-up:before {
+    content: "\e160"}  #spBootstrap .glyphicon-log-in:before {
+    content: "\e161"}  #spBootstrap .glyphicon-flash:before {
+    content: "\e162"}  #spBootstrap .glyphicon-log-out:before {
+    content: "\e163"}  #spBootstrap .glyphicon-new-window:before {
+    content: "\e164"}  #spBootstrap .glyphicon-record:before {
+    content: "\e165"}  #spBootstrap .glyphicon-save:before {
+    content: "\e166"}  #spBootstrap .glyphicon-open:before {
+    content: "\e167"}  #spBootstrap .glyphicon-saved:before {
+    content: "\e168"}  #spBootstrap .glyphicon-import:before {
+    content: "\e169"}  #spBootstrap .glyphicon-export:before {
+    content: "\e170"}  #spBootstrap .glyphicon-send:before {
+    content: "\e171"}  #spBootstrap .glyphicon-floppy-disk:before {
+    content: "\e172"}  #spBootstrap .glyphicon-floppy-saved:before {
+    content: "\e173"}  #spBootstrap .glyphicon-floppy-remove:before {
+    content: "\e174"}  #spBootstrap .glyphicon-floppy-save:before {
+    content: "\e175"}  #spBootstrap .glyphicon-floppy-open:before {
+    content: "\e176"}  #spBootstrap .glyphicon-credit-card:before {
+    content: "\e177"}  #spBootstrap .glyphicon-transfer:before {
+    content: "\e178"}  #spBootstrap .glyphicon-cutlery:before {
+    content: "\e179"}  #spBootstrap .glyphicon-header:before {
+    content: "\e180"}  #spBootstrap .glyphicon-compressed:before {
+    content: "\e181"}  #spBootstrap .glyphicon-earphone:before {
+    content: "\e182"}  #spBootstrap .glyphicon-phone-alt:before {
+    content: "\e183"}  #spBootstrap .glyphicon-tower:before {
+    content: "\e184"}  #spBootstrap .glyphicon-stats:before {
+    content: "\e185"}  #spBootstrap .glyphicon-sd-video:before {
+    content: "\e186"}  #spBootstrap .glyphicon-hd-video:before {
+    content: "\e187"}  #spBootstrap .glyphicon-subtitles:before {
+    content: "\e188"}  #spBootstrap .glyphicon-sound-stereo:before {
+    content: "\e189"}  #spBootstrap .glyphicon-sound-dolby:before {
+    content: "\e190"}  #spBootstrap .glyphicon-sound-5-1:before {
+    content: "\e191"}  #spBootstrap .glyphicon-sound-6-1:before {
+    content: "\e192"}  #spBootstrap .glyphicon-sound-7-1:before {
+    content: "\e193"}  #spBootstrap .glyphicon-copyright-mark:before {
+    content: "\e194"}  #spBootstrap .glyphicon-registration-mark:before {
+    content: "\e195"}  #spBootstrap .glyphicon-cloud-download:before {
+    content: "\e197"}  #spBootstrap .glyphicon-cloud-upload:before {
+    content: "\e198"}  #spBootstrap .glyphicon-tree-conifer:before {
+    content: "\e199"}  #spBootstrap .glyphicon-tree-deciduous:before {
+    content: "\e200"}
+#spBootstrap * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#spBootstrap :before, #spBootstrap :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#spBootstrap html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+#spBootstrap body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}  #spBootstrap input, #spBootstrap button, #spBootstrap select, #spBootstrap textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+#spBootstrap a {
+    color: #428bca;
+    text-decoration: none;
+}
+#spBootstrap a:hover, #spBootstrap a:focus {
+    color: #2a6496;
+    text-decoration: underline;
+}
+#spBootstrap a:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+#spBootstrap figure {
+    margin: 0;
+}
+#spBootstrap img {
+    vertical-align: middle;
+}  #spBootstrap .img-responsive,#spBootstrap .thumbnail>img,#spBootstrap .thumbnail a>img,#spBootstrap .carousel-inner>.item>img,#spBootstrap .carousel-inner>.item>a>img {
+    display: block;
+    width: 100% \9;
+    max-width: 100%;
+    height: auto;
+}  #spBootstrap .img-rounded {
+    border-radius: 6px;
+}  #spBootstrap .img-thumbnail {
+    display: inline-block;
+    width: 100% \9;
+    max-width: 100%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}  #spBootstrap .img-circle {
+    border-radius: 50%}
+#spBootstrap hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}  #spBootstrap .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}  #spBootstrap .sr-only-focusable:active,#spBootstrap .sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+}
+#spBootstrap h1, #spBootstrap h2, #spBootstrap h3, #spBootstrap h4, #spBootstrap h5, #spBootstrap h6,#spBootstrap .h1,#spBootstrap .h2,#spBootstrap .h3,#spBootstrap .h4,#spBootstrap .h5,#spBootstrap .h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+#spBootstrap h1 small, #spBootstrap h2 small, #spBootstrap h3 small, #spBootstrap h4 small, #spBootstrap h5 small, #spBootstrap h6 small,#spBootstrap .h1 small,#spBootstrap .h2 small,#spBootstrap .h3 small,#spBootstrap .h4 small,#spBootstrap .h5 small,#spBootstrap .h6 small, h1#spBootstrap .small, h2#spBootstrap .small, h3#spBootstrap .small, h4#spBootstrap .small, h5#spBootstrap .small, h6#spBootstrap .small,#spBootstrap .h1#spBootstrap .small,#spBootstrap .h2#spBootstrap .small,#spBootstrap .h3#spBootstrap .small,#spBootstrap .h4#spBootstrap .small,#spBootstrap .h5#spBootstrap .small,#spBootstrap .h6#spBootstrap .small {
+    font-weight: 400;
+    line-height: 1;
+    color: #777;
+}
+#spBootstrap h1,#spBootstrap .h1, #spBootstrap h2,#spBootstrap .h2, #spBootstrap h3,#spBootstrap .h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#spBootstrap h1 small,#spBootstrap .h1 small, h2 small,#spBootstrap .h2 small, h3 small,#spBootstrap .h3 small, h1#spBootstrap .small,#spBootstrap .h1#spBootstrap .small, h2#spBootstrap .small,#spBootstrap .h2#spBootstrap .small, h3#spBootstrap .small,#spBootstrap .h3#spBootstrap .small {
+    font-size: 65%}
+h4,#spBootstrap .h4, h5,#spBootstrap .h5, h6,#spBootstrap .h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#spBootstrap h4 small,#spBootstrap .h4 small, #spBootstrap h5 small,#spBootstrap .h5 small, h6 small,#spBootstrap .h6 small, h4#spBootstrap .small,#spBootstrap .h4#spBootstrap .small, h5#spBootstrap .small,#spBootstrap .h5#spBootstrap .small, h6#spBootstrap .small,#spBootstrap .h6#spBootstrap .small {
+    font-size: 75%}
+#spBootstrap h1,#spBootstrap .h1 {
+    font-size: 36px;
+}
+#spBootstrap h2,#spBootstrap .h2 {
+    font-size: 30px;
+}
+#spBootstrap h3,#spBootstrap .h3 {
+    font-size: 24px;
+}
+#spBootstrap h4,#spBootstrap .h4 {
+    font-size: 18px;
+}
+#spBootstrap h5,#spBootstrap .h5 {
+    font-size: 14px;
+}
+#spBootstrap h6,#spBootstrap .h6 {
+    font-size: 12px;
+}
+#spBootstrap p {
+    margin: 0 0 10px;
+}  #spBootstrap .lead {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+@media (min-width:768px) {
+   #spBootstrap .lead {
+    font-size: 21px;
+}
+}#spBootstrap small,#spBootstrap .small {
+    font-size: 85%}
+#spBootstrap cite {
+    font-style: normal;
+}
+mark,#spBootstrap .mark {
+    padding: .2em;
+    background-color: #fcf8e3;
+}  #spBootstrap .text-left {
+    text-align: left;
+}  #spBootstrap .text-right {
+    text-align: right;
+}  #spBootstrap .text-center {
+    text-align: center;
+}  #spBootstrap .text-justify {
+    text-align: justify;
+}  #spBootstrap .text-nowrap {
+    white-space: nowrap;
+}  #spBootstrap .text-lowercase {
+    text-transform: lowercase;
+}  #spBootstrap .text-uppercase {
+    text-transform: uppercase;
+}  #spBootstrap .text-capitalize {
+    text-transform: capitalize;
+}  #spBootstrap .text-muted {
+    color: #777;
+}  #spBootstrap .text-primary {
+    color: #428bca;
+}  #spBootstrap a.text-primary:hover {
+    color: #3071a9;
+}  #spBootstrap .text-success {
+    color: #3c763d;
+}  #spBootstrap a.text-success:hover {
+    color: #2b542c;
+}  #spBootstrap .text-info {
+    color: #31708f;
+}  #spBootstrap a.text-info:hover {
+    color: #245269;
+}  #spBootstrap .text-warning {
+    color: #8a6d3b;
+}  #spBootstrap a.text-warning:hover {
+    color: #66512c;
+}  #spBootstrap .text-danger {
+    color: #a94442;
+}  #spBootstrap a.text-danger:hover {
+    color: #843534;
+}  #spBootstrap .bg-primary {
+    color: #fff;
+    background-color: #428bca;
+}  #spBootstrap a.bg-primary:hover {
+    background-color: #3071a9;
+}  #spBootstrap .bg-success {
+    background-color: #dff0d8;
+}  #spBootstrap a.bg-success:hover {
+    background-color: #c1e2b3;
+}  #spBootstrap .bg-info {
+    background-color: #d9edf7;
+}  #spBootstrap a.bg-info:hover {
+    background-color: #afd9ee;
+}  #spBootstrap .bg-warning {
+    background-color: #fcf8e3;
+}  #spBootstrap a.bg-warning:hover {
+    background-color: #f7ecb5;
+}  #spBootstrap .bg-danger {
+    background-color: #f2dede;
+}  #spBootstrap a.bg-danger:hover {
+    background-color: #e4b9b9;
+}  #spBootstrap .page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+#spBootstrap ul, #spBootstrap ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+#spBootstrap ul ul, #spBootstrap ol ul, #spBootstrap ul ol, #spBootstrap ol ol {
+    margin-bottom: 0;
+}  #spBootstrap .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}  #spBootstrap .list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}  #spBootstrap .list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+#spBootstrap dl {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+#spBootstrap dt, #spBootstrap dd {
+    line-height: 1.42857143;
+}
+#spBootstrap dt {
+    font-weight: 700;
+}
+#spBootstrap dd {
+    margin-left: 0;
+}
+@media (min-width:768px) {
+   #spBootstrap .dl-horizontal dt {
+    float: left;
+    width: 160px;
+    overflow: hidden;
+    clear: left;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}  #spBootstrap .dl-horizontal dd {
+    margin-left: 180px;
+}
+}#spBootstrap abbr[title], #spBootstrap abbr[data-original-title] {
+    cursor: help;
+    border-bottom: 1px dotted #777;
+}  #spBootstrap .initialism {
+    font-size: 90%;
+    text-transform: uppercase;
+}
+#spBootstrap blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #eee;
+}
+#spBootstrap blockquote p:last-child, #spBootstrap blockquote ul:last-child, #spBootstrap blockquote ol:last-child {
+    margin-bottom: 0;
+}
+#spBootstrap blockquote footer, #spBootstrap blockquote small, #spBootstrap blockquote#spBootstrap .small {
+    display: block;
+    font-size: 80%;
+    line-height: 1.42857143;
+    color: #777;
+}
+#spBootstrap blockquote footer:before, #spBootstrap blockquote small:before, #spBootstrap blockquote#spBootstrap .small:before {
+    content: '\2014 \00A0'}  #spBootstrap .blockquote-reverse, blockquote.pull-right {
+    padding-right: 15px;
+    padding-left: 0;
+    text-align: right;
+    border-right: 5px solid #eee;
+    border-left: 0;
+}  #spBootstrap .blockquote-reverse footer:before, blockquote.pull-right footer:before,#spBootstrap .blockquote-reverse small:before, blockquote.pull-right small:before,#spBootstrap .blockquote-reverse#spBootstrap .small:before, blockquote.pull-right#spBootstrap .small:before {
+    content: ''}  #spBootstrap .blockquote-reverse footer:after, blockquote.pull-right footer:after,#spBootstrap .blockquote-reverse small:after, blockquote.pull-right small:after,#spBootstrap .blockquote-reverse#spBootstrap .small:after, blockquote.pull-right#spBootstrap .small:after {
+    content: '\00A0 \2014'}
+#spBootstrap blockquote:before, blockquote:after {
+    content: ""}
+#spBootstrap address {
+    margin-bottom: 20px;
+    font-style: normal;
+    line-height: 1.42857143;
+}
+#spBootstrap code, #spBootstrap kbd, #spBootstrap pre, #spBootstrap samp {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+#spBootstrap code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+#spBootstrap kbd {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #fff;
+    background-color: #333;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
+}
+#spBootstrap kbd kbd {
+    padding: 0;
+    font-size: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#spBootstrap pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#spBootstrap pre code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border-radius: 0;
+}  #spBootstrap .pre-scrollable {
+    max-height: 340px;
+    overflow-y: scroll;
+}  #spBootstrap .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width:768px) {
+   #spBootstrap .container {
+    width: 750px;
+}
+}@media (min-width:992px) {
+   #spBootstrap .container {
+    width: 970px;
+}
+}@media (min-width:1200px) {
+   #spBootstrap .container {
+    width: 1170px;
+}
+}  #spBootstrap .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}  #spBootstrap .row {
+    margin-right: -15px;
+    margin-left: -15px;
+}  #spBootstrap .col-xs-1,#spBootstrap .col-sm-1,#spBootstrap .col-md-1,#spBootstrap .col-lg-1,#spBootstrap .col-xs-2,#spBootstrap .col-sm-2,#spBootstrap .col-md-2,#spBootstrap .col-lg-2,#spBootstrap .col-xs-3,#spBootstrap .col-sm-3,#spBootstrap .col-md-3,#spBootstrap .col-lg-3,#spBootstrap .col-xs-4,#spBootstrap .col-sm-4,#spBootstrap .col-md-4,#spBootstrap .col-lg-4,#spBootstrap .col-xs-5,#spBootstrap .col-sm-5,#spBootstrap .col-md-5,#spBootstrap .col-lg-5,#spBootstrap .col-xs-6,#spBootstrap .col-sm-6,#spBootstrap .col-md-6,#spBootstrap .col-lg-6,#spBootstrap .col-xs-7,#spBootstrap .col-sm-7,#spBootstrap .col-md-7,#spBootstrap .col-lg-7,#spBootstrap .col-xs-8,#spBootstrap .col-sm-8,#spBootstrap .col-md-8,#spBootstrap .col-lg-8,#spBootstrap .col-xs-9,#spBootstrap .col-sm-9,#spBootstrap .col-md-9,#spBootstrap .col-lg-9,#spBootstrap .col-xs-10,#spBootstrap .col-sm-10,#spBootstrap .col-md-10,#spBootstrap .col-lg-10,#spBootstrap .col-xs-11,#spBootstrap .col-sm-11,#spBootstrap .col-md-11,#spBootstrap .col-lg-11,#spBootstrap .col-xs-12,#spBootstrap .col-sm-12,#spBootstrap .col-md-12,#spBootstrap .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}  #spBootstrap .col-xs-1,#spBootstrap .col-xs-2,#spBootstrap .col-xs-3,#spBootstrap .col-xs-4,#spBootstrap .col-xs-5,#spBootstrap .col-xs-6,#spBootstrap .col-xs-7,#spBootstrap .col-xs-8,#spBootstrap .col-xs-9,#spBootstrap .col-xs-10,#spBootstrap .col-xs-11,#spBootstrap .col-xs-12 {
+    float: left;
+}  #spBootstrap .col-xs-12 {
+    width: 100%}  #spBootstrap .col-xs-11 {
+    width: 91.66666667%}  #spBootstrap .col-xs-10 {
+    width: 83.33333333%}  #spBootstrap .col-xs-9 {
+    width: 75%}  #spBootstrap .col-xs-8 {
+    width: 66.66666667%}  #spBootstrap .col-xs-7 {
+    width: 58.33333333%}  #spBootstrap .col-xs-6 {
+    width: 50%}  #spBootstrap .col-xs-5 {
+    width: 41.66666667%}  #spBootstrap .col-xs-4 {
+    width: 33.33333333%}  #spBootstrap .col-xs-3 {
+    width: 25%}  #spBootstrap .col-xs-2 {
+    width: 16.66666667%}  #spBootstrap .col-xs-1 {
+    width: 8.33333333%}  #spBootstrap .col-xs-pull-12 {
+    right: 100%}  #spBootstrap .col-xs-pull-11 {
+    right: 91.66666667%}  #spBootstrap .col-xs-pull-10 {
+    right: 83.33333333%}  #spBootstrap .col-xs-pull-9 {
+    right: 75%}  #spBootstrap .col-xs-pull-8 {
+    right: 66.66666667%}  #spBootstrap .col-xs-pull-7 {
+    right: 58.33333333%}  #spBootstrap .col-xs-pull-6 {
+    right: 50%}  #spBootstrap .col-xs-pull-5 {
+    right: 41.66666667%}  #spBootstrap .col-xs-pull-4 {
+    right: 33.33333333%}  #spBootstrap .col-xs-pull-3 {
+    right: 25%}  #spBootstrap .col-xs-pull-2 {
+    right: 16.66666667%}  #spBootstrap .col-xs-pull-1 {
+    right: 8.33333333%}  #spBootstrap .col-xs-pull-0 {
+    right: auto;
+}  #spBootstrap .col-xs-push-12 {
+    left: 100%}  #spBootstrap .col-xs-push-11 {
+    left: 91.66666667%}  #spBootstrap .col-xs-push-10 {
+    left: 83.33333333%}  #spBootstrap .col-xs-push-9 {
+    left: 75%}  #spBootstrap .col-xs-push-8 {
+    left: 66.66666667%}  #spBootstrap .col-xs-push-7 {
+    left: 58.33333333%}  #spBootstrap .col-xs-push-6 {
+    left: 50%}  #spBootstrap .col-xs-push-5 {
+    left: 41.66666667%}  #spBootstrap .col-xs-push-4 {
+    left: 33.33333333%}  #spBootstrap .col-xs-push-3 {
+    left: 25%}  #spBootstrap .col-xs-push-2 {
+    left: 16.66666667%}  #spBootstrap .col-xs-push-1 {
+    left: 8.33333333%}  #spBootstrap .col-xs-push-0 {
+    left: auto;
+}  #spBootstrap .col-xs-offset-12 {
+    margin-left: 100%}  #spBootstrap .col-xs-offset-11 {
+    margin-left: 91.66666667%}  #spBootstrap .col-xs-offset-10 {
+    margin-left: 83.33333333%}  #spBootstrap .col-xs-offset-9 {
+    margin-left: 75%}  #spBootstrap .col-xs-offset-8 {
+    margin-left: 66.66666667%}  #spBootstrap .col-xs-offset-7 {
+    margin-left: 58.33333333%}  #spBootstrap .col-xs-offset-6 {
+    margin-left: 50%}  #spBootstrap .col-xs-offset-5 {
+    margin-left: 41.66666667%}  #spBootstrap .col-xs-offset-4 {
+    margin-left: 33.33333333%}  #spBootstrap .col-xs-offset-3 {
+    margin-left: 25%}  #spBootstrap .col-xs-offset-2 {
+    margin-left: 16.66666667%}  #spBootstrap .col-xs-offset-1 {
+    margin-left: 8.33333333%}  #spBootstrap .col-xs-offset-0 {
+    margin-left: 0;
+}
+@media (min-width:768px) {
+   #spBootstrap .col-sm-1,#spBootstrap .col-sm-2,#spBootstrap .col-sm-3,#spBootstrap .col-sm-4,#spBootstrap .col-sm-5,#spBootstrap .col-sm-6,#spBootstrap .col-sm-7,#spBootstrap .col-sm-8,#spBootstrap .col-sm-9,#spBootstrap .col-sm-10,#spBootstrap .col-sm-11,#spBootstrap .col-sm-12 {
+    float: left;
+}  #spBootstrap .col-sm-12 {
+    width: 100%}  #spBootstrap .col-sm-11 {
+    width: 91.66666667%}  #spBootstrap .col-sm-10 {
+    width: 83.33333333%}  #spBootstrap .col-sm-9 {
+    width: 75%}  #spBootstrap .col-sm-8 {
+    width: 66.66666667%}  #spBootstrap .col-sm-7 {
+    width: 58.33333333%}  #spBootstrap .col-sm-6 {
+    width: 50%}  #spBootstrap .col-sm-5 {
+    width: 41.66666667%}  #spBootstrap .col-sm-4 {
+    width: 33.33333333%}  #spBootstrap .col-sm-3 {
+    width: 25%}  #spBootstrap .col-sm-2 {
+    width: 16.66666667%}  #spBootstrap .col-sm-1 {
+    width: 8.33333333%}  #spBootstrap .col-sm-pull-12 {
+    right: 100%}  #spBootstrap .col-sm-pull-11 {
+    right: 91.66666667%}  #spBootstrap .col-sm-pull-10 {
+    right: 83.33333333%}  #spBootstrap .col-sm-pull-9 {
+    right: 75%}  #spBootstrap .col-sm-pull-8 {
+    right: 66.66666667%}  #spBootstrap .col-sm-pull-7 {
+    right: 58.33333333%}  #spBootstrap .col-sm-pull-6 {
+    right: 50%}  #spBootstrap .col-sm-pull-5 {
+    right: 41.66666667%}  #spBootstrap .col-sm-pull-4 {
+    right: 33.33333333%}  #spBootstrap .col-sm-pull-3 {
+    right: 25%}  #spBootstrap .col-sm-pull-2 {
+    right: 16.66666667%}  #spBootstrap .col-sm-pull-1 {
+    right: 8.33333333%}  #spBootstrap .col-sm-pull-0 {
+    right: auto;
+}  #spBootstrap .col-sm-push-12 {
+    left: 100%}  #spBootstrap .col-sm-push-11 {
+    left: 91.66666667%}  #spBootstrap .col-sm-push-10 {
+    left: 83.33333333%}  #spBootstrap .col-sm-push-9 {
+    left: 75%}  #spBootstrap .col-sm-push-8 {
+    left: 66.66666667%}  #spBootstrap .col-sm-push-7 {
+    left: 58.33333333%}  #spBootstrap .col-sm-push-6 {
+    left: 50%}  #spBootstrap .col-sm-push-5 {
+    left: 41.66666667%}  #spBootstrap .col-sm-push-4 {
+    left: 33.33333333%}  #spBootstrap .col-sm-push-3 {
+    left: 25%}  #spBootstrap .col-sm-push-2 {
+    left: 16.66666667%}  #spBootstrap .col-sm-push-1 {
+    left: 8.33333333%}  #spBootstrap .col-sm-push-0 {
+    left: auto;
+}  #spBootstrap .col-sm-offset-12 {
+    margin-left: 100%}  #spBootstrap .col-sm-offset-11 {
+    margin-left: 91.66666667%}  #spBootstrap .col-sm-offset-10 {
+    margin-left: 83.33333333%}  #spBootstrap .col-sm-offset-9 {
+    margin-left: 75%}  #spBootstrap .col-sm-offset-8 {
+    margin-left: 66.66666667%}  #spBootstrap .col-sm-offset-7 {
+    margin-left: 58.33333333%}  #spBootstrap .col-sm-offset-6 {
+    margin-left: 50%}  #spBootstrap .col-sm-offset-5 {
+    margin-left: 41.66666667%}  #spBootstrap .col-sm-offset-4 {
+    margin-left: 33.33333333%}  #spBootstrap .col-sm-offset-3 {
+    margin-left: 25%}  #spBootstrap .col-sm-offset-2 {
+    margin-left: 16.66666667%}  #spBootstrap .col-sm-offset-1 {
+    margin-left: 8.33333333%}  #spBootstrap .col-sm-offset-0 {
+    margin-left: 0;
+}
+}@media (min-width:992px) {
+   #spBootstrap .col-md-1,#spBootstrap .col-md-2,#spBootstrap .col-md-3,#spBootstrap .col-md-4,#spBootstrap .col-md-5,#spBootstrap .col-md-6,#spBootstrap .col-md-7,#spBootstrap .col-md-8,#spBootstrap .col-md-9,#spBootstrap .col-md-10,#spBootstrap .col-md-11,#spBootstrap .col-md-12 {
+    float: left;
+}  #spBootstrap .col-md-12 {
+    width: 100%}  #spBootstrap .col-md-11 {
+    width: 91.66666667%}  #spBootstrap .col-md-10 {
+    width: 83.33333333%}  #spBootstrap .col-md-9 {
+    width: 75%}  #spBootstrap .col-md-8 {
+    width: 66.66666667%}  #spBootstrap .col-md-7 {
+    width: 58.33333333%}  #spBootstrap .col-md-6 {
+    width: 50%}  #spBootstrap .col-md-5 {
+    width: 41.66666667%}  #spBootstrap .col-md-4 {
+    width: 33.33333333%}  #spBootstrap .col-md-3 {
+    width: 25%}  #spBootstrap .col-md-2 {
+    width: 16.66666667%}  #spBootstrap .col-md-1 {
+    width: 8.33333333%}  #spBootstrap .col-md-pull-12 {
+    right: 100%}  #spBootstrap .col-md-pull-11 {
+    right: 91.66666667%}  #spBootstrap .col-md-pull-10 {
+    right: 83.33333333%}  #spBootstrap .col-md-pull-9 {
+    right: 75%}  #spBootstrap .col-md-pull-8 {
+    right: 66.66666667%}  #spBootstrap .col-md-pull-7 {
+    right: 58.33333333%}  #spBootstrap .col-md-pull-6 {
+    right: 50%}  #spBootstrap .col-md-pull-5 {
+    right: 41.66666667%}  #spBootstrap .col-md-pull-4 {
+    right: 33.33333333%}  #spBootstrap .col-md-pull-3 {
+    right: 25%}  #spBootstrap .col-md-pull-2 {
+    right: 16.66666667%}  #spBootstrap .col-md-pull-1 {
+    right: 8.33333333%}  #spBootstrap .col-md-pull-0 {
+    right: auto;
+}  #spBootstrap .col-md-push-12 {
+    left: 100%}  #spBootstrap .col-md-push-11 {
+    left: 91.66666667%}  #spBootstrap .col-md-push-10 {
+    left: 83.33333333%}  #spBootstrap .col-md-push-9 {
+    left: 75%}  #spBootstrap .col-md-push-8 {
+    left: 66.66666667%}  #spBootstrap .col-md-push-7 {
+    left: 58.33333333%}  #spBootstrap .col-md-push-6 {
+    left: 50%}  #spBootstrap .col-md-push-5 {
+    left: 41.66666667%}  #spBootstrap .col-md-push-4 {
+    left: 33.33333333%}  #spBootstrap .col-md-push-3 {
+    left: 25%}  #spBootstrap .col-md-push-2 {
+    left: 16.66666667%}  #spBootstrap .col-md-push-1 {
+    left: 8.33333333%}  #spBootstrap .col-md-push-0 {
+    left: auto;
+}  #spBootstrap .col-md-offset-12 {
+    margin-left: 100%}  #spBootstrap .col-md-offset-11 {
+    margin-left: 91.66666667%}  #spBootstrap .col-md-offset-10 {
+    margin-left: 83.33333333%}  #spBootstrap .col-md-offset-9 {
+    margin-left: 75%}  #spBootstrap .col-md-offset-8 {
+    margin-left: 66.66666667%}  #spBootstrap .col-md-offset-7 {
+    margin-left: 58.33333333%}  #spBootstrap .col-md-offset-6 {
+    margin-left: 50%}  #spBootstrap .col-md-offset-5 {
+    margin-left: 41.66666667%}  #spBootstrap .col-md-offset-4 {
+    margin-left: 33.33333333%}  #spBootstrap .col-md-offset-3 {
+    margin-left: 25%}  #spBootstrap .col-md-offset-2 {
+    margin-left: 16.66666667%}  #spBootstrap .col-md-offset-1 {
+    margin-left: 8.33333333%}  #spBootstrap .col-md-offset-0 {
+    margin-left: 0;
+}
+}@media (min-width:1200px) {
+   #spBootstrap .col-lg-1,#spBootstrap .col-lg-2,#spBootstrap .col-lg-3,#spBootstrap .col-lg-4,#spBootstrap .col-lg-5,#spBootstrap .col-lg-6,#spBootstrap .col-lg-7,#spBootstrap .col-lg-8,#spBootstrap .col-lg-9,#spBootstrap .col-lg-10,#spBootstrap .col-lg-11,#spBootstrap .col-lg-12 {
+    float: left;
+}  #spBootstrap .col-lg-12 {
+    width: 100%}  #spBootstrap .col-lg-11 {
+    width: 91.66666667%}  #spBootstrap .col-lg-10 {
+    width: 83.33333333%}  #spBootstrap .col-lg-9 {
+    width: 75%}  #spBootstrap .col-lg-8 {
+    width: 66.66666667%}  #spBootstrap .col-lg-7 {
+    width: 58.33333333%}  #spBootstrap .col-lg-6 {
+    width: 50%}  #spBootstrap .col-lg-5 {
+    width: 41.66666667%}  #spBootstrap .col-lg-4 {
+    width: 33.33333333%}  #spBootstrap .col-lg-3 {
+    width: 25%}  #spBootstrap .col-lg-2 {
+    width: 16.66666667%}  #spBootstrap .col-lg-1 {
+    width: 8.33333333%}  #spBootstrap .col-lg-pull-12 {
+    right: 100%}  #spBootstrap .col-lg-pull-11 {
+    right: 91.66666667%}  #spBootstrap .col-lg-pull-10 {
+    right: 83.33333333%}  #spBootstrap .col-lg-pull-9 {
+    right: 75%}  #spBootstrap .col-lg-pull-8 {
+    right: 66.66666667%}  #spBootstrap .col-lg-pull-7 {
+    right: 58.33333333%}  #spBootstrap .col-lg-pull-6 {
+    right: 50%}  #spBootstrap .col-lg-pull-5 {
+    right: 41.66666667%}  #spBootstrap .col-lg-pull-4 {
+    right: 33.33333333%}  #spBootstrap .col-lg-pull-3 {
+    right: 25%}  #spBootstrap .col-lg-pull-2 {
+    right: 16.66666667%}  #spBootstrap .col-lg-pull-1 {
+    right: 8.33333333%}  #spBootstrap .col-lg-pull-0 {
+    right: auto;
+}  #spBootstrap .col-lg-push-12 {
+    left: 100%}  #spBootstrap .col-lg-push-11 {
+    left: 91.66666667%}  #spBootstrap .col-lg-push-10 {
+    left: 83.33333333%}  #spBootstrap .col-lg-push-9 {
+    left: 75%}  #spBootstrap .col-lg-push-8 {
+    left: 66.66666667%}  #spBootstrap .col-lg-push-7 {
+    left: 58.33333333%}  #spBootstrap .col-lg-push-6 {
+    left: 50%}  #spBootstrap .col-lg-push-5 {
+    left: 41.66666667%}  #spBootstrap .col-lg-push-4 {
+    left: 33.33333333%}  #spBootstrap .col-lg-push-3 {
+    left: 25%}  #spBootstrap .col-lg-push-2 {
+    left: 16.66666667%}  #spBootstrap .col-lg-push-1 {
+    left: 8.33333333%}  #spBootstrap .col-lg-push-0 {
+    left: auto;
+}  #spBootstrap .col-lg-offset-12 {
+    margin-left: 100%}  #spBootstrap .col-lg-offset-11 {
+    margin-left: 91.66666667%}  #spBootstrap .col-lg-offset-10 {
+    margin-left: 83.33333333%}  #spBootstrap .col-lg-offset-9 {
+    margin-left: 75%}  #spBootstrap .col-lg-offset-8 {
+    margin-left: 66.66666667%}  #spBootstrap .col-lg-offset-7 {
+    margin-left: 58.33333333%}  #spBootstrap .col-lg-offset-6 {
+    margin-left: 50%}  #spBootstrap .col-lg-offset-5 {
+    margin-left: 41.66666667%}  #spBootstrap .col-lg-offset-4 {
+    margin-left: 33.33333333%}  #spBootstrap .col-lg-offset-3 {
+    margin-left: 25%}  #spBootstrap .col-lg-offset-2 {
+    margin-left: 16.66666667%}  #spBootstrap .col-lg-offset-1 {
+    margin-left: 8.33333333%}  #spBootstrap .col-lg-offset-0 {
+    margin-left: 0;
+}
+}  #spBootstrap table {
+    background-color: transparent;
+}  #spBootstrap th {
+    text-align: left;
+}  #spBootstrap .table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}  #spBootstrap .table>thead>tr>th,#spBootstrap .table>tbody>tr>th,#spBootstrap .table>tfoot>tr>th,#spBootstrap .table>thead>tr>td,#spBootstrap .table>tbody>tr>td,#spBootstrap .table>tfoot>tr>td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}  #spBootstrap .table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+}  #spBootstrap .table>caption+thead>tr:first-child>th,#spBootstrap .table>colgroup+thead>tr:first-child>th,#spBootstrap .table>thead:first-child>tr:first-child>th,#spBootstrap .table>caption+thead>tr:first-child>td,#spBootstrap .table>colgroup+thead>tr:first-child>td,#spBootstrap .table>thead:first-child>tr:first-child>td {
+    border-top: 0;
+}  #spBootstrap .table>tbody+tbody {
+    border-top: 2px solid #ddd;
+}  #spBootstrap .table#spBootstrap .table {
+    background-color: #fff;
+}  #spBootstrap .table-condensed>thead>tr>th,#spBootstrap .table-condensed>tbody>tr>th,#spBootstrap .table-condensed>tfoot>tr>th,#spBootstrap .table-condensed>thead>tr>td,#spBootstrap .table-condensed>tbody>tr>td,#spBootstrap .table-condensed>tfoot>tr>td {
+    padding: 5px;
+}  #spBootstrap .table-bordered {
+    border: 1px solid #ddd;
+}  #spBootstrap .table-bordered>thead>tr>th,#spBootstrap .table-bordered>tbody>tr>th,#spBootstrap .table-bordered>tfoot>tr>th,#spBootstrap .table-bordered>thead>tr>td,#spBootstrap .table-bordered>tbody>tr>td,#spBootstrap .table-bordered>tfoot>tr>td {
+    border: 1px solid #ddd;
+}  #spBootstrap .table-bordered>thead>tr>th,#spBootstrap .table-bordered>thead>tr>td {
+    border-bottom-width: 2px;
+}  
+#spBootstrap .table-striped>tr:nth-child(odd)>td,#spBootstrap .table-striped>tr:nth-child(odd)>th {
+    background-color: #f9f9f9;
+}  
+#spBootstrap .table-hover>tbody>tr:hover>td,#spBootstrap .table-hover>tbody>tr:hover>th {
+    background-color: #f5f5f5;
+}
+table col[class*=col-] {
+    position: static;
+    display: table-column;
+    float: none;
+}
+table td[class*=col-], table th[class*=col-] {
+    position: static;
+    display: table-cell;
+    float: none;
+}  #spBootstrap .table>thead>tr>td.active,#spBootstrap .table>tbody>tr>td.active,#spBootstrap .table>tfoot>tr>td.active,#spBootstrap .table>thead>tr>th.active,#spBootstrap .table>tbody>tr>th.active,#spBootstrap .table>tfoot>tr>th.active,#spBootstrap .table>thead>tr.active>td,#spBootstrap .table>tbody>tr.active>td,#spBootstrap .table>tfoot>tr.active>td,#spBootstrap .table>thead>tr.active>th,#spBootstrap .table>tbody>tr.active>th,#spBootstrap .table>tfoot>tr.active>th {
+    background-color: #f5f5f5;
+}  #spBootstrap .table-hover>tbody>tr>td.active:hover,#spBootstrap .table-hover>tbody>tr>th.active:hover,#spBootstrap .table-hover>tbody>tr.active:hover>td,#spBootstrap .table-hover>tbody>tr:hover>.active,#spBootstrap .table-hover>tbody>tr.active:hover>th {
+    background-color: #e8e8e8;
+}  #spBootstrap .table>thead>tr>td.success,#spBootstrap .table>tbody>tr>td.success,#spBootstrap .table>tfoot>tr>td.success,#spBootstrap .table>thead>tr>th.success,#spBootstrap .table>tbody>tr>th.success,#spBootstrap .table>tfoot>tr>th.success,#spBootstrap .table>thead>tr.success>td,#spBootstrap .table>tbody>tr.success>td,#spBootstrap .table>tfoot>tr.success>td,#spBootstrap .table>thead>tr.success>th,#spBootstrap .table>tbody>tr.success>th,#spBootstrap .table>tfoot>tr.success>th {
+    background-color: #dff0d8;
+}  #spBootstrap .table-hover>tbody>tr>td.success:hover,#spBootstrap .table-hover>tbody>tr>th.success:hover,#spBootstrap .table-hover>tbody>tr.success:hover>td,#spBootstrap .table-hover>tbody>tr:hover>.success,#spBootstrap .table-hover>tbody>tr.success:hover>th {
+    background-color: #d0e9c6;
+}  #spBootstrap .table>thead>tr>td.info,#spBootstrap .table>tbody>tr>td.info,#spBootstrap .table>tfoot>tr>td.info,#spBootstrap .table>thead>tr>th.info,#spBootstrap .table>tbody>tr>th.info,#spBootstrap .table>tfoot>tr>th.info,#spBootstrap .table>thead>tr.info>td,#spBootstrap .table>tbody>tr.info>td,#spBootstrap .table>tfoot>tr.info>td,#spBootstrap .table>thead>tr.info>th,#spBootstrap .table>tbody>tr.info>th,#spBootstrap .table>tfoot>tr.info>th {
+    background-color: #d9edf7;
+}  #spBootstrap .table-hover>tbody>tr>td.info:hover,#spBootstrap .table-hover>tbody>tr>th.info:hover,#spBootstrap .table-hover>tbody>tr.info:hover>td,#spBootstrap .table-hover>tbody>tr:hover>.info,#spBootstrap .table-hover>tbody>tr.info:hover>th {
+    background-color: #c4e3f3;
+}  #spBootstrap .table>thead>tr>td.warning,#spBootstrap .table>tbody>tr>td.warning,#spBootstrap .table>tfoot>tr>td.warning,#spBootstrap .table>thead>tr>th.warning,#spBootstrap .table>tbody>tr>th.warning,#spBootstrap .table>tfoot>tr>th.warning,#spBootstrap .table>thead>tr.warning>td,#spBootstrap .table>tbody>tr.warning>td,#spBootstrap .table>tfoot>tr.warning>td,#spBootstrap .table>thead>tr.warning>th,#spBootstrap .table>tbody>tr.warning>th,#spBootstrap .table>tfoot>tr.warning>th {
+    background-color: #fcf8e3;
+}  #spBootstrap .table-hover>tbody>tr>td.warning:hover,#spBootstrap .table-hover>tbody>tr>th.warning:hover,#spBootstrap .table-hover>tbody>tr.warning:hover>td,#spBootstrap .table-hover>tbody>tr:hover>.warning,#spBootstrap .table-hover>tbody>tr.warning:hover>th {
+    background-color: #faf2cc;
+}  #spBootstrap .table>thead>tr>td.danger,#spBootstrap .table>tbody>tr>td.danger,#spBootstrap .table>tfoot>tr>td.danger,#spBootstrap .table>thead>tr>th.danger,#spBootstrap .table>tbody>tr>th.danger,#spBootstrap .table>tfoot>tr>th.danger,#spBootstrap .table>thead>tr.danger>td,#spBootstrap .table>tbody>tr.danger>td,#spBootstrap .table>tfoot>tr.danger>td,#spBootstrap .table>thead>tr.danger>th,#spBootstrap .table>tbody>tr.danger>th,#spBootstrap .table>tfoot>tr.danger>th {
+    background-color: #f2dede;
+}  #spBootstrap .table-hover>tbody>tr>td.danger:hover,#spBootstrap .table-hover>tbody>tr>th.danger:hover,#spBootstrap .table-hover>tbody>tr.danger:hover>td,#spBootstrap .table-hover>tbody>tr:hover>.danger,#spBootstrap .table-hover>tbody>tr.danger:hover>th {
+    background-color: #ebcccc;
+}
+@media screen and (max-width:767px) {
+   #spBootstrap .table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+}  #spBootstrap .table-responsive>.table {
+    margin-bottom: 0;
+}  #spBootstrap .table-responsive>.table>thead>tr>th,#spBootstrap .table-responsive>.table>tbody>tr>th,#spBootstrap .table-responsive>.table>tfoot>tr>th,#spBootstrap .table-responsive>.table>thead>tr>td,#spBootstrap .table-responsive>.table>tbody>tr>td,#spBootstrap .table-responsive>.table>tfoot>tr>td {
+    white-space: nowrap;
+}  #spBootstrap .table-responsive>.table-bordered {
+    border: 0;
+}  #spBootstrap .table-responsive>.table-bordered>thead>tr>th:first-child,#spBootstrap .table-responsive>.table-bordered>tbody>tr>th:first-child,#spBootstrap .table-responsive>.table-bordered>tfoot>tr>th:first-child,#spBootstrap .table-responsive>.table-bordered>thead>tr>td:first-child,#spBootstrap .table-responsive>.table-bordered>tbody>tr>td:first-child,#spBootstrap .table-responsive>.table-bordered>tfoot>tr>td:first-child {
+    border-left: 0;
+}  #spBootstrap .table-responsive>.table-bordered>thead>tr>th:last-child,#spBootstrap .table-responsive>.table-bordered>tbody>tr>th:last-child,#spBootstrap .table-responsive>.table-bordered>tfoot>tr>th:last-child,#spBootstrap .table-responsive>.table-bordered>thead>tr>td:last-child,#spBootstrap .table-responsive>.table-bordered>tbody>tr>td:last-child,#spBootstrap .table-responsive>.table-bordered>tfoot>tr>td:last-child {
+    border-right: 0;
+}  #spBootstrap .table-responsive>.table-bordered>tbody>tr:last-child>th,#spBootstrap .table-responsive>.table-bordered>tfoot>tr:last-child>th,#spBootstrap .table-responsive>.table-bordered>tbody>tr:last-child>td,#spBootstrap .table-responsive>.table-bordered>tfoot>tr:last-child>td {
+    border-bottom: 0;
+}
+}  #spBootstrap fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}  #spBootstrap legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: inherit;
+    color: #333;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+}  #spBootstrap label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}  #spBootstrap input[type=search] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}  #spBootstrap input[type=radio], input[type=checkbox] {
+    margin: 4px 0 0;
+    margin-top: 1px \9;
+    line-height: normal;
+}  #spBootstrap input[type=file] {
+    display: block;
+}  #spBootstrap input[type=range] {
+    display: block;
+    width: 100%}  #spBootstrap select[multiple], select[size] {
+    height: auto;
+}  #spBootstrap input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+output {
+    display: block;
+    padding-top: 7px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+}  #spBootstrap .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}  #spBootstrap .form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0,  0.75), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0,  0.75), 0 0 8px rgba(102, 175, 233, .6);
+}  #spBootstrap .form-control::-moz-placeholder {
+    color: #777;
+    opacity: 1;
+}  #spBootstrap .form-control:-ms-input-placeholder {
+    color: #777;
+}  #spBootstrap .form-control::-webkit-input-placeholder {
+    color: #777;
+}  #spBootstrap .form-control[disabled],#spBootstrap .form-control[readonly], fieldset[disabled]#spBootstrap .form-control {
+    cursor: not-allowed;
+    background-color: #eee;
+    opacity: 1;
+}  #spBootstrap textarea.form-control {
+    height: auto;
+}  #spBootstrap input[type=search] {
+    -webkit-appearance: none;
+}  #spBootstrap input[type=date], input[type=time], input[type=datetime-local], input[type=month] {
+    line-height: 34px;
+    line-height: 1.42857143 \0;
+}  #spBootstrap input[type=date].input-sm, input[type=time].input-sm, input[type=datetime-local].input-sm, input[type=month].input-sm {
+    line-height: 30px;
+}  #spBootstrap input[type=date].input-lg, input[type=time].input-lg, input[type=datetime-local].input-lg, input[type=month].input-lg {
+    line-height: 46px;
+}  #spBootstrap .form-group {
+    margin-bottom: 15px;
+}  #spBootstrap .radio,#spBootstrap .checkbox {
+    position: relative;
+    display: block;
+    min-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}  #spBootstrap .radio label,#spBootstrap .checkbox label {
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+}  #spBootstrap .radio input[type=radio],#spBootstrap .radio-inline input[type=radio],#spBootstrap .checkbox input[type=checkbox],#spBootstrap .checkbox-inline input[type=checkbox] {
+    position: absolute;
+    margin-top: 4px \9;
+    margin-left: -20px;
+}  #spBootstrap .radio+.radio,#spBootstrap .checkbox+.checkbox {
+    margin-top: -5px;
+}  #spBootstrap .radio-inline,#spBootstrap .checkbox-inline {
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+}  #spBootstrap .radio-inline+.radio-inline,#spBootstrap .checkbox-inline+.checkbox-inline {
+    margin-top: 0;
+    margin-left: 10px;
+}  #spBootstrap input[type=radio][disabled], input[type=checkbox][disabled], input[type=radio].disabled, input[type=checkbox].disabled, fieldset[disabled] input[type=radio], fieldset[disabled] input[type=checkbox] {
+    cursor: not-allowed;
+}  #spBootstrap .radio-inline.disabled,#spBootstrap .checkbox-inline.disabled, fieldset[disabled]#spBootstrap .radio-inline, fieldset[disabled]#spBootstrap .checkbox-inline {
+    cursor: not-allowed;
+}  #spBootstrap .radio.disabled label,#spBootstrap .checkbox.disabled label, fieldset[disabled]#spBootstrap .radio label, fieldset[disabled]#spBootstrap .checkbox label {
+    cursor: not-allowed;
+}  #spBootstrap .form-control-static {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 0;
+}  #spBootstrap .form-control-static.input-lg,#spBootstrap .form-control-static.input-sm {
+    padding-right: 0;
+    padding-left: 0;
+}  #spBootstrap .input-sm,#spBootstrap .form-horizontal#spBootstrap .form-group-sm#spBootstrap .form-control {
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}  #spBootstrap select.input-sm {
+    height: 30px;
+    line-height: 30px;
+}  #spBootstrap textarea.input-sm, select[multiple].input-sm {
+    height: auto;
+}  #spBootstrap .input-lg,#spBootstrap .form-horizontal#spBootstrap .form-group-lg#spBootstrap .form-control {
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+}  #spBootstrap select.input-lg {
+    height: 46px;
+    line-height: 46px;
+}  #spBootstrap textarea.input-lg, select[multiple].input-lg {
+    height: auto;
+}  #spBootstrap .has-feedback {
+    position: relative;
+}  #spBootstrap .has-feedback#spBootstrap .form-control {
+    padding-right: 42.5px;
+}  #spBootstrap .form-control-feedback {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+}  #spBootstrap .input-lg+.form-control-feedback {
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+}  #spBootstrap .input-sm+.form-control-feedback {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}  #spBootstrap .has-success#spBootstrap .help-block,#spBootstrap .has-success#spBootstrap .control-label,#spBootstrap .has-success#spBootstrap .radio,#spBootstrap .has-success#spBootstrap .checkbox,#spBootstrap .has-success#spBootstrap .radio-inline,#spBootstrap .has-success#spBootstrap .checkbox-inline {
+    color: #3c763d;
+}  #spBootstrap .has-success#spBootstrap .form-control {
+    border-color: #3c763d;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0,  0.75);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0,  0.75);
+}  #spBootstrap .has-success#spBootstrap .form-control:focus {
+    border-color: #2b542c;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0,  0.75), 0 0 6px #67b168;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0,  0.75), 0 0 6px #67b168;
+}  #spBootstrap .has-success#spBootstrap .input-group-addon {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #3c763d;
+}  #spBootstrap .has-success#spBootstrap .form-control-feedback {
+    color: #3c763d;
+}  #spBootstrap .has-warning#spBootstrap .help-block,#spBootstrap .has-warning#spBootstrap .control-label,#spBootstrap .has-warning#spBootstrap .radio,#spBootstrap .has-warning#spBootstrap .checkbox,#spBootstrap .has-warning#spBootstrap .radio-inline,#spBootstrap .has-warning#spBootstrap .checkbox-inline {
+    color: #8a6d3b;
+}  #spBootstrap .has-warning#spBootstrap .form-control {
+    border-color: #8a6d3b;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0,  0.75);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0,  0.75);
+}  #spBootstrap .has-warning#spBootstrap .form-control:focus {
+    border-color: #66512c;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0,  0.75), 0 0 6px #c0a16b;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0,  0.75), 0 0 6px #c0a16b;
+}  #spBootstrap .has-warning#spBootstrap .input-group-addon {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #8a6d3b;
+}  #spBootstrap .has-warning#spBootstrap .form-control-feedback {
+    color: #8a6d3b;
+}  #spBootstrap .has-error#spBootstrap .help-block,#spBootstrap .has-error#spBootstrap .control-label,#spBootstrap .has-error#spBootstrap .radio,#spBootstrap .has-error#spBootstrap .checkbox,#spBootstrap .has-error#spBootstrap .radio-inline,#spBootstrap .has-error#spBootstrap .checkbox-inline {
+    color: #a94442;
+}  #spBootstrap .has-error#spBootstrap .form-control {
+    border-color: #a94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0,  0.75);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0,  0.75);
+}  #spBootstrap .has-error#spBootstrap .form-control:focus {
+    border-color: #843534;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0,  0.75), 0 0 6px #ce8483;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0,  0.75), 0 0 6px #ce8483;
+}  #spBootstrap .has-error#spBootstrap .input-group-addon {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #a94442;
+}  #spBootstrap .has-error#spBootstrap .form-control-feedback {
+    color: #a94442;
+}  #spBootstrap .has-feedback label.sr-only~.form-control-feedback {
+    top: 0;
+}  #spBootstrap .help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #737373;
+}
+@media (min-width:768px) {
+   #spBootstrap .form-inline#spBootstrap .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}  #spBootstrap .form-inline#spBootstrap .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}  #spBootstrap .form-inline#spBootstrap .input-group {
+    display: inline-table;
+    vertical-align: middle;
+}  #spBootstrap .form-inline#spBootstrap .input-group#spBootstrap .input-group-addon,#spBootstrap .form-inline#spBootstrap .input-group#spBootstrap .input-group-btn,#spBootstrap .form-inline#spBootstrap .input-group#spBootstrap .form-control {
+    width: auto;
+}  #spBootstrap .form-inline#spBootstrap .input-group>.form-control {
+    width: 100%}  #spBootstrap .form-inline#spBootstrap .control-label {
+    margin-bottom: 0;
+    vertical-align: middle;
+}  #spBootstrap .form-inline#spBootstrap .radio,#spBootstrap .form-inline#spBootstrap .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+}  #spBootstrap .form-inline#spBootstrap .radio label,#spBootstrap .form-inline#spBootstrap .checkbox label {
+    padding-left: 0;
+}  #spBootstrap .form-inline#spBootstrap .radio input[type=radio],#spBootstrap .form-inline#spBootstrap .checkbox input[type=checkbox] {
+    position: relative;
+    margin-left: 0;
+}  #spBootstrap .form-inline#spBootstrap .has-feedback#spBootstrap .form-control-feedback {
+    top: 0;
+}
+}  #spBootstrap .form-horizontal#spBootstrap .radio,#spBootstrap .form-horizontal#spBootstrap .checkbox,#spBootstrap .form-horizontal#spBootstrap .radio-inline,#spBootstrap .form-horizontal#spBootstrap .checkbox-inline {
+    padding-top: 7px;
+    margin-top: 0;
+    margin-bottom: 0;
+}  #spBootstrap .form-horizontal#spBootstrap .radio,#spBootstrap .form-horizontal#spBootstrap .checkbox {
+    min-height: 27px;
+}  #spBootstrap .form-horizontal#spBootstrap .form-group {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+@media (min-width:768px) {
+   #spBootstrap .form-horizontal#spBootstrap .control-label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: right;
+}
+}  #spBootstrap .form-horizontal#spBootstrap .has-feedback#spBootstrap .form-control-feedback {
+    top: 0;
+    right: 15px;
+}
+@media (min-width:768px) {
+   #spBootstrap .form-horizontal#spBootstrap .form-group-lg#spBootstrap .control-label {
+    padding-top: 14.3px;
+}
+}@media (min-width:768px) {
+   #spBootstrap .form-horizontal#spBootstrap .form-group-sm#spBootstrap .control-label {
+    padding-top: 6px;
+}
+}  #spBootstrap .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}  #spBootstrap .btn:focus,#spBootstrap .btn:active:focus,#spBootstrap .btn.active:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}  #spBootstrap .btn:hover,#spBootstrap .btn:focus {
+    color: #333;
+    text-decoration: none;
+}  #spBootstrap .btn:active,#spBootstrap .btn.active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}  #spBootstrap .btn.disabled,#spBootstrap .btn[disabled], fieldset[disabled]#spBootstrap .btn {
+    pointer-events: none;
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .65;
+}  #spBootstrap .btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}  #spBootstrap .btn-default:hover,#spBootstrap .btn-default:focus,#spBootstrap .btn-default:active,#spBootstrap .btn-default.active,#spBootstrap .open>.dropdown-toggle.btn-default {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}  #spBootstrap .btn-default:active,#spBootstrap .btn-default.active,#spBootstrap .open>.dropdown-toggle.btn-default {
+    background-image: none;
+}  #spBootstrap .btn-default.disabled,#spBootstrap .btn-default[disabled], fieldset[disabled]#spBootstrap .btn-default,#spBootstrap .btn-default.disabled:hover,#spBootstrap .btn-default[disabled]:hover, fieldset[disabled]#spBootstrap .btn-default:hover,#spBootstrap .btn-default.disabled:focus,#spBootstrap .btn-default[disabled]:focus, fieldset[disabled]#spBootstrap .btn-default:focus,#spBootstrap .btn-default.disabled:active,#spBootstrap .btn-default[disabled]:active, fieldset[disabled]#spBootstrap .btn-default:active,#spBootstrap .btn-default.disabled.active,#spBootstrap .btn-default[disabled].active, fieldset[disabled]#spBootstrap .btn-default.active {
+    background-color: #fff;
+    border-color: #ccc;
+}  #spBootstrap .btn-default#spBootstrap .badge {
+    color: #fff;
+    background-color: #333;
+}  #spBootstrap .btn-primary {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}  #spBootstrap .btn-primary:hover,#spBootstrap .btn-primary:focus,#spBootstrap .btn-primary:active,#spBootstrap .btn-primary.active,#spBootstrap .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #3071a9;
+    border-color: #285e8e;
+}  #spBootstrap .btn-primary:active,#spBootstrap .btn-primary.active,#spBootstrap .open>.dropdown-toggle.btn-primary {
+    background-image: none;
+}  #spBootstrap .btn-primary.disabled,#spBootstrap .btn-primary[disabled], fieldset[disabled]#spBootstrap .btn-primary,#spBootstrap .btn-primary.disabled:hover,#spBootstrap .btn-primary[disabled]:hover, fieldset[disabled]#spBootstrap .btn-primary:hover,#spBootstrap .btn-primary.disabled:focus,#spBootstrap .btn-primary[disabled]:focus, fieldset[disabled]#spBootstrap .btn-primary:focus,#spBootstrap .btn-primary.disabled:active,#spBootstrap .btn-primary[disabled]:active, fieldset[disabled]#spBootstrap .btn-primary:active,#spBootstrap .btn-primary.disabled.active,#spBootstrap .btn-primary[disabled].active, fieldset[disabled]#spBootstrap .btn-primary.active {
+    background-color: #428bca;
+    border-color: #357ebd;
+}  #spBootstrap .btn-primary#spBootstrap .badge {
+    color: #428bca;
+    background-color: #fff;
+}  #spBootstrap .btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}  #spBootstrap .btn-success:hover,#spBootstrap .btn-success:focus,#spBootstrap .btn-success:active,#spBootstrap .btn-success.active,#spBootstrap .open>.dropdown-toggle.btn-success {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+}  #spBootstrap .btn-success:active,#spBootstrap .btn-success.active,#spBootstrap .open>.dropdown-toggle.btn-success {
+    background-image: none;
+}  #spBootstrap .btn-success.disabled,#spBootstrap .btn-success[disabled], fieldset[disabled]#spBootstrap .btn-success,#spBootstrap .btn-success.disabled:hover,#spBootstrap .btn-success[disabled]:hover, fieldset[disabled]#spBootstrap .btn-success:hover,#spBootstrap .btn-success.disabled:focus,#spBootstrap .btn-success[disabled]:focus, fieldset[disabled]#spBootstrap .btn-success:focus,#spBootstrap .btn-success.disabled:active,#spBootstrap .btn-success[disabled]:active, fieldset[disabled]#spBootstrap .btn-success:active,#spBootstrap .btn-success.disabled.active,#spBootstrap .btn-success[disabled].active, fieldset[disabled]#spBootstrap .btn-success.active {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}  #spBootstrap .btn-success#spBootstrap .badge {
+    color: #5cb85c;
+    background-color: #fff;
+}  #spBootstrap .btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}  #spBootstrap .btn-info:hover,#spBootstrap .btn-info:focus,#spBootstrap .btn-info:active,#spBootstrap .btn-info.active,#spBootstrap .open>.dropdown-toggle.btn-info {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+}  #spBootstrap .btn-info:active,#spBootstrap .btn-info.active,#spBootstrap .open>.dropdown-toggle.btn-info {
+    background-image: none;
+}  #spBootstrap .btn-info.disabled,#spBootstrap .btn-info[disabled], fieldset[disabled]#spBootstrap .btn-info,#spBootstrap .btn-info.disabled:hover,#spBootstrap .btn-info[disabled]:hover, fieldset[disabled]#spBootstrap .btn-info:hover,#spBootstrap .btn-info.disabled:focus,#spBootstrap .btn-info[disabled]:focus, fieldset[disabled]#spBootstrap .btn-info:focus,#spBootstrap .btn-info.disabled:active,#spBootstrap .btn-info[disabled]:active, fieldset[disabled]#spBootstrap .btn-info:active,#spBootstrap .btn-info.disabled.active,#spBootstrap .btn-info[disabled].active, fieldset[disabled]#spBootstrap .btn-info.active {
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}  #spBootstrap .btn-info#spBootstrap .badge {
+    color: #5bc0de;
+    background-color: #fff;
+}  #spBootstrap .btn-warning {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}  #spBootstrap .btn-warning:hover,#spBootstrap .btn-warning:focus,#spBootstrap .btn-warning:active,#spBootstrap .btn-warning.active,#spBootstrap .open>.dropdown-toggle.btn-warning {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #d58512;
+}  #spBootstrap .btn-warning:active,#spBootstrap .btn-warning.active,#spBootstrap .open>.dropdown-toggle.btn-warning {
+    background-image: none;
+}  #spBootstrap .btn-warning.disabled,#spBootstrap .btn-warning[disabled], fieldset[disabled]#spBootstrap .btn-warning,#spBootstrap .btn-warning.disabled:hover,#spBootstrap .btn-warning[disabled]:hover, fieldset[disabled]#spBootstrap .btn-warning:hover,#spBootstrap .btn-warning.disabled:focus,#spBootstrap .btn-warning[disabled]:focus, fieldset[disabled]#spBootstrap .btn-warning:focus,#spBootstrap .btn-warning.disabled:active,#spBootstrap .btn-warning[disabled]:active, fieldset[disabled]#spBootstrap .btn-warning:active,#spBootstrap .btn-warning.disabled.active,#spBootstrap .btn-warning[disabled].active, fieldset[disabled]#spBootstrap .btn-warning.active {
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}  #spBootstrap .btn-warning#spBootstrap .badge {
+    color: #f0ad4e;
+    background-color: #fff;
+}  #spBootstrap .btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}  #spBootstrap .btn-danger:hover,#spBootstrap .btn-danger:focus,#spBootstrap .btn-danger:active,#spBootstrap .btn-danger.active,#spBootstrap .open>.dropdown-toggle.btn-danger {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925;
+}  #spBootstrap .btn-danger:active,#spBootstrap .btn-danger.active,#spBootstrap .open>.dropdown-toggle.btn-danger {
+    background-image: none;
+}  #spBootstrap .btn-danger.disabled,#spBootstrap .btn-danger[disabled], fieldset[disabled]#spBootstrap .btn-danger,#spBootstrap .btn-danger.disabled:hover,#spBootstrap .btn-danger[disabled]:hover, fieldset[disabled]#spBootstrap .btn-danger:hover,#spBootstrap .btn-danger.disabled:focus,#spBootstrap .btn-danger[disabled]:focus, fieldset[disabled]#spBootstrap .btn-danger:focus,#spBootstrap .btn-danger.disabled:active,#spBootstrap .btn-danger[disabled]:active, fieldset[disabled]#spBootstrap .btn-danger:active,#spBootstrap .btn-danger.disabled.active,#spBootstrap .btn-danger[disabled].active, fieldset[disabled]#spBootstrap .btn-danger.active {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}  #spBootstrap .btn-danger#spBootstrap .badge {
+    color: #d9534f;
+    background-color: #fff;
+}  #spBootstrap .btn-link {
+    font-weight: 400;
+    color: #428bca;
+    cursor: pointer;
+    border-radius: 0;
+}  #spBootstrap .btn-link,#spBootstrap .btn-link:active,#spBootstrap .btn-link[disabled], fieldset[disabled]#spBootstrap .btn-link {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}  #spBootstrap .btn-link,#spBootstrap .btn-link:hover,#spBootstrap .btn-link:focus,#spBootstrap .btn-link:active {
+    border-color: transparent;
+}  #spBootstrap .btn-link:hover,#spBootstrap .btn-link:focus {
+    color: #2a6496;
+    text-decoration: underline;
+    background-color: transparent;
+}  #spBootstrap .btn-link[disabled]:hover, fieldset[disabled]#spBootstrap .btn-link:hover,#spBootstrap .btn-link[disabled]:focus, fieldset[disabled]#spBootstrap .btn-link:focus {
+    color: #777;
+    text-decoration: none;
+}  #spBootstrap .btn-lg,#spBootstrap .btn-group-lg>.btn {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+}  #spBootstrap .btn-sm,#spBootstrap .btn-group-sm>.btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}  #spBootstrap .btn-xs,#spBootstrap .btn-group-xs>.btn {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}  #spBootstrap .btn-block {
+    display: block;
+    width: 100%}  #spBootstrap .btn-block+.btn-block {
+    margin-top: 5px;
+}  #spBootstrap input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].btn-block {
+    width: 100%}  #spBootstrap .fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}  #spBootstrap .fade.in {
+    opacity: 1;
+}  #spBootstrap .collapse {
+    display: none;
+}  #spBootstrap .collapse.in {
+    display: block;
+}  #spBootstrap tr.collapse.in {
+    display: table-row;
+}  #spBootstrap tbody.collapse.in {
+    display: table-row-group;
+}  #spBootstrap .collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height .35s ease;
+    -o-transition: height .35s ease;
+    transition: height .35s ease;
+}  #spBootstrap .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}  #spBootstrap .dropdown {
+    position: relative;
+}  #spBootstrap .dropdown-toggle:focus {
+    outline: 0;
+}  #spBootstrap .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}  #spBootstrap .dropdown-menu.pull-right {
+    right: 0;
+    left: auto;
+}  #spBootstrap .dropdown-menu#spBootstrap .divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}  #spBootstrap .dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}  #spBootstrap .dropdown-menu>li>a:hover,#spBootstrap .dropdown-menu>li>a:focus {
+    color: #262626;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}  #spBootstrap .dropdown-menu>.active>a,#spBootstrap .dropdown-menu>.active>a:hover,#spBootstrap .dropdown-menu>.active>a:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #428bca;
+    outline: 0;
+}  #spBootstrap .dropdown-menu>.disabled>a,#spBootstrap .dropdown-menu>.disabled>a:hover,#spBootstrap .dropdown-menu>.disabled>a:focus {
+    color: #777;
+}  #spBootstrap .dropdown-menu>.disabled>a:hover,#spBootstrap .dropdown-menu>.disabled>a:focus {
+    text-decoration: none;
+    cursor: not-allowed;
+    background-color: transparent;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}  #spBootstrap .open>.dropdown-menu {
+    display: block;
+}  #spBootstrap .open>a {
+    outline: 0;
+}  #spBootstrap .dropdown-menu-right {
+    right: 0;
+    left: auto;
+}  #spBootstrap .dropdown-menu-left {
+    right: auto;
+    left: 0;
+}  #spBootstrap .dropdown-header {
+    display: block;
+    padding: 3px 20px;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #777;
+    white-space: nowrap;
+}  #spBootstrap .dropdown-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 990;
+}  #spBootstrap .pull-right>.dropdown-menu {
+    right: 0;
+    left: auto;
+}  #spBootstrap .dropup#spBootstrap .caret,#spBootstrap .navbar-fixed-bottom#spBootstrap .dropdown#spBootstrap .caret {
+    content: "";
+    border-top: 0;
+    border-bottom: 4px solid;
+}  #spBootstrap .dropup#spBootstrap .dropdown-menu,#spBootstrap .navbar-fixed-bottom#spBootstrap .dropdown#spBootstrap .dropdown-menu {
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 1px;
+}
+@media (min-width:768px) {
+   #spBootstrap .navbar-right#spBootstrap .dropdown-menu {
+    right: 0;
+    left: auto;
+}  #spBootstrap .navbar-right#spBootstrap .dropdown-menu-left {
+    right: auto;
+    left: 0;
+}
+}  #spBootstrap .btn-group,#spBootstrap .btn-group-vertical {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}  #spBootstrap .btn-group>.btn,#spBootstrap .btn-group-vertical>.btn {
+    position: relative;
+    float: left;
+}  #spBootstrap .btn-group>.btn:hover,#spBootstrap .btn-group-vertical>.btn:hover,#spBootstrap .btn-group>.btn:focus,#spBootstrap .btn-group-vertical>.btn:focus,#spBootstrap .btn-group>.btn:active,#spBootstrap .btn-group-vertical>.btn:active,#spBootstrap .btn-group>.btn.active,#spBootstrap .btn-group-vertical>.btn.active {
+    z-index: 2;
+}  #spBootstrap .btn-group>.btn:focus,#spBootstrap .btn-group-vertical>.btn:focus {
+    outline: 0;
+}  #spBootstrap .btn-group#spBootstrap .btn+.btn,#spBootstrap .btn-group#spBootstrap .btn+.btn-group,#spBootstrap .btn-group#spBootstrap .btn-group+.btn,#spBootstrap .btn-group#spBootstrap .btn-group+.btn-group {
+    margin-left: -1px;
+}  #spBootstrap .btn-toolbar {
+    margin-left: -5px;
+}  #spBootstrap .btn-toolbar#spBootstrap .btn-group,#spBootstrap .btn-toolbar#spBootstrap .input-group {
+    float: left;
+}  #spBootstrap .btn-toolbar>.btn,#spBootstrap .btn-toolbar>.btn-group,#spBootstrap .btn-toolbar>.input-group {
+    margin-left: 5px;
+}  #spBootstrap .btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+    border-radius: 0;
+}  #spBootstrap .btn-group>.btn:first-child {
+    margin-left: 0;
+}  #spBootstrap .btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}  #spBootstrap .btn-group>.btn:last-child:not(:first-child),#spBootstrap .btn-group>.dropdown-toggle:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}  #spBootstrap .btn-group>.btn-group {
+    float: left;
+}  #spBootstrap .btn-group>.btn-group:not(:first-child):not(:last-child)>.btn {
+    border-radius: 0;
+}  #spBootstrap .btn-group>.btn-group:first-child>.btn:last-child,#spBootstrap .btn-group>.btn-group:first-child>.dropdown-toggle {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}  #spBootstrap .btn-group>.btn-group:last-child>.btn:first-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}  #spBootstrap .btn-group#spBootstrap .dropdown-toggle:active,#spBootstrap .btn-group.open#spBootstrap .dropdown-toggle {
+    outline: 0;
+}  #spBootstrap .btn-group>.btn+.dropdown-toggle {
+    padding-right: 8px;
+    padding-left: 8px;
+}  #spBootstrap .btn-group>.btn-lg+.dropdown-toggle {
+    padding-right: 12px;
+    padding-left: 12px;
+}  #spBootstrap .btn-group.open#spBootstrap .dropdown-toggle {
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}  #spBootstrap .btn-group.open#spBootstrap .dropdown-toggle.btn-link {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}  #spBootstrap .btn#spBootstrap .caret {
+    margin-left: 0;
+}  #spBootstrap .btn-lg#spBootstrap .caret {
+    border-width: 5px 5px 0;
+    border-bottom-width: 0;
+}  #spBootstrap .dropup#spBootstrap .btn-lg#spBootstrap .caret {
+    border-width: 0 5px 5px;
+}  #spBootstrap .btn-group-vertical>.btn,#spBootstrap .btn-group-vertical>.btn-group,#spBootstrap .btn-group-vertical>.btn-group>.btn {
+    display: block;
+    float: none;
+    width: 100%;
+    max-width: 100%}  #spBootstrap .btn-group-vertical>.btn-group>.btn {
+    float: none;
+}  #spBootstrap .btn-group-vertical>.btn+.btn,#spBootstrap .btn-group-vertical>.btn+.btn-group,#spBootstrap .btn-group-vertical>.btn-group+.btn,#spBootstrap .btn-group-vertical>.btn-group+.btn-group {
+    margin-top: -1px;
+    margin-left: 0;
+}  #spBootstrap .btn-group-vertical>.btn:not(:first-child):not(:last-child) {
+    border-radius: 0;
+}  #spBootstrap .btn-group-vertical>.btn:first-child:not(:last-child) {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}  #spBootstrap .btn-group-vertical>.btn:last-child:not(:first-child) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+}  #spBootstrap .btn-group-vertical>.btn-group:not(:first-child):not(:last-child)>.btn {
+    border-radius: 0;
+}  #spBootstrap .btn-group-vertical>.btn-group:first-child:not(:last-child)>.btn:last-child,#spBootstrap .btn-group-vertical>.btn-group:first-child:not(:last-child)>.dropdown-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}  #spBootstrap .btn-group-vertical>.btn-group:last-child:not(:first-child)>.btn:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}  #spBootstrap .btn-group-justified {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+}  #spBootstrap .btn-group-justified>.btn,#spBootstrap .btn-group-justified>.btn-group {
+    display: table-cell;
+    float: none;
+    width: 1%}  #spBootstrap .btn-group-justified>.btn-group#spBootstrap .btn {
+    width: 100%}  #spBootstrap .btn-group-justified>.btn-group#spBootstrap .dropdown-menu {
+    left: auto;
+}  #spBootstrap [data-toggle=buttons]>.btn>input[type=radio], [data-toggle=buttons]>.btn>input[type=checkbox] {
+    position: absolute;
+    z-index: -1;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}  #spBootstrap .input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}  #spBootstrap .input-group[class*=col-] {
+    float: none;
+    padding-right: 0;
+    padding-left: 0;
+}  #spBootstrap .input-group#spBootstrap .form-control {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+}  #spBootstrap .input-group-lg>.form-control,#spBootstrap .input-group-lg>.input-group-addon,#spBootstrap .input-group-lg>.input-group-btn>.btn {
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+}  #spBootstrap select.input-group-lg>.form-control, select.input-group-lg>.input-group-addon, select.input-group-lg>.input-group-btn>.btn {
+    height: 46px;
+    line-height: 46px;
+}  #spBootstrap textarea.input-group-lg>.form-control, textarea.input-group-lg>.input-group-addon, textarea.input-group-lg>.input-group-btn>.btn, select[multiple].input-group-lg>.form-control, select[multiple].input-group-lg>.input-group-addon, select[multiple].input-group-lg>.input-group-btn>.btn {
+    height: auto;
+}  #spBootstrap .input-group-sm>.form-control,#spBootstrap .input-group-sm>.input-group-addon,#spBootstrap .input-group-sm>.input-group-btn>.btn {
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}  #spBootstrap select.input-group-sm>.form-control, select.input-group-sm>.input-group-addon, select.input-group-sm>.input-group-btn>.btn {
+    height: 30px;
+    line-height: 30px;
+}  #spBootstrap textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addon, textarea.input-group-sm>.input-group-btn>.btn, select[multiple].input-group-sm>.form-control, select[multiple].input-group-sm>.input-group-addon, select[multiple].input-group-sm>.input-group-btn>.btn {
+    height: auto;
+}  #spBootstrap .input-group-addon,#spBootstrap .input-group-btn,#spBootstrap .input-group#spBootstrap .form-control {
+    display: table-cell;
+}  #spBootstrap .input-group-addon:not(:first-child):not(:last-child),#spBootstrap .input-group-btn:not(:first-child):not(:last-child),#spBootstrap .input-group#spBootstrap .form-control:not(:first-child):not(:last-child) {
+    border-radius: 0;
+}  #spBootstrap .input-group-addon,#spBootstrap .input-group-btn {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+}  #spBootstrap .input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}  #spBootstrap .input-group-addon.input-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+}  #spBootstrap .input-group-addon.input-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    border-radius: 6px;
+}  #spBootstrap .input-group-addon input[type=radio],#spBootstrap .input-group-addon input[type=checkbox] {
+    margin-top: 0;
+}  #spBootstrap .input-group#spBootstrap .form-control:first-child,#spBootstrap .input-group-addon:first-child,#spBootstrap .input-group-btn:first-child>.btn,#spBootstrap .input-group-btn:first-child>.btn-group>.btn,#spBootstrap .input-group-btn:first-child>.dropdown-toggle,#spBootstrap .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle),#spBootstrap .input-group-btn:last-child>.btn-group:not(:last-child)>.btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}  #spBootstrap .input-group-addon:first-child {
+    border-right: 0;
+}  #spBootstrap .input-group#spBootstrap .form-control:last-child,#spBootstrap .input-group-addon:last-child,#spBootstrap .input-group-btn:last-child>.btn,#spBootstrap .input-group-btn:last-child>.btn-group>.btn,#spBootstrap .input-group-btn:last-child>.dropdown-toggle,#spBootstrap .input-group-btn:first-child>.btn:not(:first-child),#spBootstrap .input-group-btn:first-child>.btn-group:not(:first-child)>.btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}  #spBootstrap .input-group-addon:last-child {
+    border-left: 0;
+}  #spBootstrap .input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+}  #spBootstrap .input-group-btn>.btn {
+    position: relative;
+}  #spBootstrap .input-group-btn>.btn+.btn {
+    margin-left: -1px;
+}  #spBootstrap .input-group-btn>.btn:hover,#spBootstrap .input-group-btn>.btn:focus,#spBootstrap .input-group-btn>.btn:active {
+    z-index: 2;
+}  #spBootstrap .input-group-btn:first-child>.btn,#spBootstrap .input-group-btn:first-child>.btn-group {
+    margin-right: -1px;
+}  #spBootstrap .input-group-btn:last-child>.btn,#spBootstrap .input-group-btn:last-child>.btn-group {
+    margin-left: -1px;
+}  #spBootstrap .nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}  #spBootstrap .nav>li {
+    position: relative;
+    display: block;
+}  #spBootstrap .nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}  #spBootstrap .nav>li>a:hover,#spBootstrap .nav>li>a:focus {
+    text-decoration: none;
+    background-color: #eee;
+}  #spBootstrap .nav>li.disabled>a {
+    color: #777;
+}  #spBootstrap .nav>li.disabled>a:hover,#spBootstrap .nav>li.disabled>a:focus {
+    color: #777;
+    text-decoration: none;
+    cursor: not-allowed;
+    background-color: transparent;
+}  #spBootstrap .nav#spBootstrap .open>a,#spBootstrap .nav#spBootstrap .open>a:hover,#spBootstrap .nav#spBootstrap .open>a:focus {
+    background-color: #eee;
+    border-color: #428bca;
+}  #spBootstrap .nav#spBootstrap .nav-divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}  #spBootstrap .nav>li>a>img {
+    max-width: none;
+}  #spBootstrap .nav-tabs {
+    border-bottom: 1px solid #ddd;
+}  #spBootstrap .nav-tabs>li {
+    float: left;
+    margin-bottom: -1px;
+}  #spBootstrap .nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}  #spBootstrap .nav-tabs>li>a:hover {
+    border-color: #eee #eee #ddd;
+}  #spBootstrap .nav-tabs>li.active>a,#spBootstrap .nav-tabs>li.active>a:hover,#spBootstrap .nav-tabs>li.active>a:focus {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}  #spBootstrap .nav-tabs.nav-justified {
+    width: 100%;
+    border-bottom: 0;
+}  #spBootstrap .nav-tabs.nav-justified>li {
+    float: none;
+}  #spBootstrap .nav-tabs.nav-justified>li>a {
+    margin-bottom: 5px;
+    text-align: center;
+}  #spBootstrap .nav-tabs.nav-justified>.dropdown#spBootstrap .dropdown-menu {
+    top: auto;
+    left: auto;
+}
+@media (min-width:768px) {
+   #spBootstrap .nav-tabs.nav-justified>li {
+    display: table-cell;
+    width: 1%}  #spBootstrap .nav-tabs.nav-justified>li>a {
+    margin-bottom: 0;
+}
+}  #spBootstrap .nav-tabs.nav-justified>li>a {
+    margin-right: 0;
+    border-radius: 4px;
+}  #spBootstrap .nav-tabs.nav-justified>.active>a,#spBootstrap .nav-tabs.nav-justified>.active>a:hover,#spBootstrap .nav-tabs.nav-justified>.active>a:focus {
+    border: 1px solid #ddd;
+}
+@media (min-width:768px) {
+   #spBootstrap .nav-tabs.nav-justified>li>a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+}  #spBootstrap .nav-tabs.nav-justified>.active>a,#spBootstrap .nav-tabs.nav-justified>.active>a:hover,#spBootstrap .nav-tabs.nav-justified>.active>a:focus {
+    border-bottom-color: #fff;
+}
+}  #spBootstrap .nav-pills>li {
+    float: left;
+}  #spBootstrap .nav-pills>li>a {
+    border-radius: 4px;
+}  #spBootstrap .nav-pills>li+li {
+    margin-left: 2px;
+}  #spBootstrap .nav-pills>li.active>a,#spBootstrap .nav-pills>li.active>a:hover,#spBootstrap .nav-pills>li.active>a:focus {
+    color: #fff;
+    background-color: #428bca;
+}  #spBootstrap .nav-stacked>li {
+    float: none;
+}  #spBootstrap .nav-stacked>li+li {
+    margin-top: 2px;
+    margin-left: 0;
+}  #spBootstrap .nav-justified {
+    width: 100%}  #spBootstrap .nav-justified>li {
+    float: none;
+}  #spBootstrap .nav-justified>li>a {
+    margin-bottom: 5px;
+    text-align: center;
+}  #spBootstrap .nav-justified>.dropdown#spBootstrap .dropdown-menu {
+    top: auto;
+    left: auto;
+}
+@media (min-width:768px) {
+   #spBootstrap .nav-justified>li {
+    display: table-cell;
+    width: 1%}  #spBootstrap .nav-justified>li>a {
+    margin-bottom: 0;
+}
+}  #spBootstrap .nav-tabs-justified {
+    border-bottom: 0;
+}  #spBootstrap .nav-tabs-justified>li>a {
+    margin-right: 0;
+    border-radius: 4px;
+}  #spBootstrap .nav-tabs-justified>.active>a,#spBootstrap .nav-tabs-justified>.active>a:hover,#spBootstrap .nav-tabs-justified>.active>a:focus {
+    border: 1px solid #ddd;
+}
+@media (min-width:768px) {
+   #spBootstrap .nav-tabs-justified>li>a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+}  #spBootstrap .nav-tabs-justified>.active>a,#spBootstrap .nav-tabs-justified>.active>a:hover,#spBootstrap .nav-tabs-justified>.active>a:focus {
+    border-bottom-color: #fff;
+}
+}  #spBootstrap .tab-content>.tab-pane {
+    display: none;
+}  #spBootstrap .tab-content>.active {
+    display: block;
+}  #spBootstrap .nav-tabs#spBootstrap .dropdown-menu {
+    margin-top: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}  #spBootstrap .navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+@media (min-width:768px) {
+   #spBootstrap .navbar {
+    border-radius: 4px;
+}
+}@media (min-width:768px) {
+   #spBootstrap .navbar-header {
+    float: left;
+}
+}  #spBootstrap .navbar-collapse {
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow-x: visible;
+    -webkit-overflow-scrolling: touch;
+    border-top: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+}  #spBootstrap .navbar-collapse.in {
+    overflow-y: auto;
+}
+@media (min-width:768px) {
+   #spBootstrap .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}  #spBootstrap .navbar-collapse.collapse {
+    display: block!important;
+    height: auto!important;
+    padding-bottom: 0;
+    overflow: visible!important;
+}  #spBootstrap .navbar-collapse.in {
+    overflow-y: visible;
+}  #spBootstrap .navbar-fixed-top#spBootstrap .navbar-collapse,#spBootstrap .navbar-static-top#spBootstrap .navbar-collapse,#spBootstrap .navbar-fixed-bottom#spBootstrap .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
+}  #spBootstrap .navbar-fixed-top#spBootstrap .navbar-collapse,#spBootstrap .navbar-fixed-bottom#spBootstrap .navbar-collapse {
+    max-height: 340px;
+}
+@media (max-width:480px) and (orientation:landscape) {
+   #spBootstrap .navbar-fixed-top#spBootstrap .navbar-collapse,#spBootstrap .navbar-fixed-bottom#spBootstrap .navbar-collapse {
+    max-height: 200px;
+}
+}  #spBootstrap .container>.navbar-header,#spBootstrap .container-fluid>.navbar-header,#spBootstrap .container>.navbar-collapse,#spBootstrap .container-fluid>.navbar-collapse {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+@media (min-width:768px) {
+   #spBootstrap .container>.navbar-header,#spBootstrap .container-fluid>.navbar-header,#spBootstrap .container>.navbar-collapse,#spBootstrap .container-fluid>.navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+}
+}  #spBootstrap .navbar-static-top {
+    z-index: 1000;
+    border-width: 0 0 1px;
+}
+@media (min-width:768px) {
+   #spBootstrap .navbar-static-top {
+    border-radius: 0;
+}
+}  #spBootstrap .navbar-fixed-top,#spBootstrap .navbar-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+@media (min-width:768px) {
+   #spBootstrap .navbar-fixed-top,#spBootstrap .navbar-fixed-bottom {
+    border-radius: 0;
+}
+}  #spBootstrap .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+}  #spBootstrap .navbar-fixed-bottom {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+}  #spBootstrap .navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}  #spBootstrap .navbar-brand:hover,#spBootstrap .navbar-brand:focus {
+    text-decoration: none;
+}
+@media (min-width:768px) {
+   #spBootstrap .navbar>.container#spBootstrap .navbar-brand,#spBootstrap .navbar>.container-fluid#spBootstrap .navbar-brand {
+    margin-left: -15px;
+}
+}  #spBootstrap .navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}  #spBootstrap .navbar-toggle:focus {
+    outline: 0;
+}  #spBootstrap .navbar-toggle#spBootstrap .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}  #spBootstrap .navbar-toggle#spBootstrap .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+@media (min-width:768px) {
+   #spBootstrap .navbar-toggle {
+    display: none;
+}
+}  #spBootstrap .navbar-nav {
+    margin: 7.5px -15px;
+}  #spBootstrap .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+@media (max-width:767px) {
+   #spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}  #spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu>li>a,#spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu#spBootstrap .dropdown-header {
+    padding: 5px 15px 5px 25px;
+}  #spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu>li>a {
+    line-height: 20px;
+}  #spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu>li>a:hover,#spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu>li>a:focus {
+    background-image: none;
+}
+}@media (min-width:768px) {
+   #spBootstrap .navbar-nav {
+    float: left;
+    margin: 0;
+}  #spBootstrap .navbar-nav>li {
+    float: left;
+}  #spBootstrap .navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}  #spBootstrap .navbar-nav.navbar-right:last-child {
+    margin-right: -15px;
+}
+}@media (min-width:768px) {
+   #spBootstrap .navbar-left {
+    float: left!important;
+}  #spBootstrap .navbar-right {
+    float: right!important;
+}
+}  #spBootstrap .navbar-form {
+    padding: 10px 15px;
+    margin-top: 8px;
+    margin-right: -15px;
+    margin-bottom: 8px;
+    margin-left: -15px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
+}
+@media (min-width:768px) {
+   #spBootstrap .navbar-form#spBootstrap .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}  #spBootstrap .navbar-form#spBootstrap .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}  #spBootstrap .navbar-form#spBootstrap .input-group {
+    display: inline-table;
+    vertical-align: middle;
+}  #spBootstrap .navbar-form#spBootstrap .input-group#spBootstrap .input-group-addon,#spBootstrap .navbar-form#spBootstrap .input-group#spBootstrap .input-group-btn,#spBootstrap .navbar-form#spBootstrap .input-group#spBootstrap .form-control {
+    width: auto;
+}  #spBootstrap .navbar-form#spBootstrap .input-group>.form-control {
+    width: 100%}  #spBootstrap .navbar-form#spBootstrap .control-label {
+    margin-bottom: 0;
+    vertical-align: middle;
+}  #spBootstrap .navbar-form#spBootstrap .radio,#spBootstrap .navbar-form#spBootstrap .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+}  #spBootstrap .navbar-form#spBootstrap .radio label,#spBootstrap .navbar-form#spBootstrap .checkbox label {
+    padding-left: 0;
+}  #spBootstrap .navbar-form#spBootstrap .radio input[type=radio],#spBootstrap .navbar-form#spBootstrap .checkbox input[type=checkbox] {
+    position: relative;
+    margin-left: 0;
+}  #spBootstrap .navbar-form#spBootstrap .has-feedback#spBootstrap .form-control-feedback {
+    top: 0;
+}
+}@media (max-width:767px) {
+   #spBootstrap .navbar-form#spBootstrap .form-group {
+    margin-bottom: 5px;
+}
+}@media (min-width:768px) {
+   #spBootstrap .navbar-form {
+    width: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}  #spBootstrap .navbar-form.navbar-right:last-child {
+    margin-right: -15px;
+}
+}  #spBootstrap .navbar-nav>li>.dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}  #spBootstrap .navbar-fixed-bottom#spBootstrap .navbar-nav>li>.dropdown-menu {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}  #spBootstrap .navbar-btn {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}  #spBootstrap .navbar-btn.btn-sm {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}  #spBootstrap .navbar-btn.btn-xs {
+    margin-top: 14px;
+    margin-bottom: 14px;
+}  #spBootstrap .navbar-text {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+@media (min-width:768px) {
+   #spBootstrap .navbar-text {
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+}  #spBootstrap .navbar-text.navbar-right:last-child {
+    margin-right: 0;
+}
+}  #spBootstrap .navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}  #spBootstrap .navbar-default#spBootstrap .navbar-brand {
+    color: #777;
+}  #spBootstrap .navbar-default#spBootstrap .navbar-brand:hover,#spBootstrap .navbar-default#spBootstrap .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}  #spBootstrap .navbar-default#spBootstrap .navbar-text {
+    color: #777;
+}  #spBootstrap .navbar-default#spBootstrap .navbar-nav>li>a {
+    color: #777;
+}  #spBootstrap .navbar-default#spBootstrap .navbar-nav>li>a:hover,#spBootstrap .navbar-default#spBootstrap .navbar-nav>li>a:focus {
+    color: #333;
+    background-color: transparent;
+}  #spBootstrap .navbar-default#spBootstrap .navbar-nav>.active>a,#spBootstrap .navbar-default#spBootstrap .navbar-nav>.active>a:hover,#spBootstrap .navbar-default#spBootstrap .navbar-nav>.active>a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}  #spBootstrap .navbar-default#spBootstrap .navbar-nav>.disabled>a,#spBootstrap .navbar-default#spBootstrap .navbar-nav>.disabled>a:hover,#spBootstrap .navbar-default#spBootstrap .navbar-nav>.disabled>a:focus {
+    color: #ccc;
+    background-color: transparent;
+}  #spBootstrap .navbar-default#spBootstrap .navbar-toggle {
+    border-color: #ddd;
+}  #spBootstrap .navbar-default#spBootstrap .navbar-toggle:hover,#spBootstrap .navbar-default#spBootstrap .navbar-toggle:focus {
+    background-color: #ddd;
+}  #spBootstrap .navbar-default#spBootstrap .navbar-toggle#spBootstrap .icon-bar {
+    background-color: #888;
+}  #spBootstrap .navbar-default#spBootstrap .navbar-collapse,#spBootstrap .navbar-default#spBootstrap .navbar-form {
+    border-color: #e7e7e7;
+}  #spBootstrap .navbar-default#spBootstrap .navbar-nav>.open>a,#spBootstrap .navbar-default#spBootstrap .navbar-nav>.open>a:hover,#spBootstrap .navbar-default#spBootstrap .navbar-nav>.open>a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+@media (max-width:767px) {
+   #spBootstrap .navbar-default#spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu>li>a {
+    color: #777;
+}  #spBootstrap .navbar-default#spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu>li>a:hover,#spBootstrap .navbar-default#spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu>li>a:focus {
+    color: #333;
+    background-color: transparent;
+}  #spBootstrap .navbar-default#spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu>.active>a,#spBootstrap .navbar-default#spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu>.active>a:hover,#spBootstrap .navbar-default#spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu>.active>a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}  #spBootstrap .navbar-default#spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu>.disabled>a,#spBootstrap .navbar-default#spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu>.disabled>a:hover,#spBootstrap .navbar-default#spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu>.disabled>a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+}  #spBootstrap .navbar-default#spBootstrap .navbar-link {
+    color: #777;
+}  #spBootstrap .navbar-default#spBootstrap .navbar-link:hover {
+    color: #333;
+}  #spBootstrap .navbar-default#spBootstrap .btn-link {
+    color: #777;
+}  #spBootstrap .navbar-default#spBootstrap .btn-link:hover,#spBootstrap .navbar-default#spBootstrap .btn-link:focus {
+    color: #333;
+}  #spBootstrap .navbar-default#spBootstrap .btn-link[disabled]:hover, fieldset[disabled]#spBootstrap .navbar-default#spBootstrap .btn-link:hover,#spBootstrap .navbar-default#spBootstrap .btn-link[disabled]:focus, fieldset[disabled]#spBootstrap .navbar-default#spBootstrap .btn-link:focus {
+    color: #ccc;
+}  #spBootstrap .navbar-inverse {
+    background-color: #222;
+    border-color: #080808;
+}  #spBootstrap .navbar-inverse#spBootstrap .navbar-brand {
+    color: #777;
+}  #spBootstrap .navbar-inverse#spBootstrap .navbar-brand:hover,#spBootstrap .navbar-inverse#spBootstrap .navbar-brand:focus {
+    color: #fff;
+    background-color: transparent;
+}  #spBootstrap .navbar-inverse#spBootstrap .navbar-text {
+    color: #777;
+}  #spBootstrap .navbar-inverse#spBootstrap .navbar-nav>li>a {
+    color: #777;
+}  #spBootstrap .navbar-inverse#spBootstrap .navbar-nav>li>a:hover,#spBootstrap .navbar-inverse#spBootstrap .navbar-nav>li>a:focus {
+    color: #fff;
+    background-color: transparent;
+}  #spBootstrap .navbar-inverse#spBootstrap .navbar-nav>.active>a,#spBootstrap .navbar-inverse#spBootstrap .navbar-nav>.active>a:hover,#spBootstrap .navbar-inverse#spBootstrap .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #080808;
+}  #spBootstrap .navbar-inverse#spBootstrap .navbar-nav>.disabled>a,#spBootstrap .navbar-inverse#spBootstrap .navbar-nav>.disabled>a:hover,#spBootstrap .navbar-inverse#spBootstrap .navbar-nav>.disabled>a:focus {
+    color: #444;
+    background-color: transparent;
+}  #spBootstrap .navbar-inverse#spBootstrap .navbar-toggle {
+    border-color: #333;
+}  #spBootstrap .navbar-inverse#spBootstrap .navbar-toggle:hover,#spBootstrap .navbar-inverse#spBootstrap .navbar-toggle:focus {
+    background-color: #333;
+}  #spBootstrap .navbar-inverse#spBootstrap .navbar-toggle#spBootstrap .icon-bar {
+    background-color: #fff;
+}  #spBootstrap .navbar-inverse#spBootstrap .navbar-collapse,#spBootstrap .navbar-inverse#spBootstrap .navbar-form {
+    border-color: #101010;
+}  #spBootstrap .navbar-inverse#spBootstrap .navbar-nav>.open>a,#spBootstrap .navbar-inverse#spBootstrap .navbar-nav>.open>a:hover,#spBootstrap .navbar-inverse#spBootstrap .navbar-nav>.open>a:focus {
+    color: #fff;
+    background-color: #080808;
+}
+@media (max-width:767px) {
+   #spBootstrap .navbar-inverse#spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu>.dropdown-header {
+    border-color: #080808;
+}  #spBootstrap .navbar-inverse#spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu#spBootstrap .divider {
+    background-color: #080808;
+}  #spBootstrap .navbar-inverse#spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu>li>a {
+    color: #777;
+}  #spBootstrap .navbar-inverse#spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu>li>a:hover,#spBootstrap .navbar-inverse#spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu>li>a:focus {
+    color: #fff;
+    background-color: transparent;
+}  #spBootstrap .navbar-inverse#spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu>.active>a,#spBootstrap .navbar-inverse#spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu>.active>a:hover,#spBootstrap .navbar-inverse#spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu>.active>a:focus {
+    color: #fff;
+    background-color: #080808;
+}  #spBootstrap .navbar-inverse#spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu>.disabled>a,#spBootstrap .navbar-inverse#spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu>.disabled>a:hover,#spBootstrap .navbar-inverse#spBootstrap .navbar-nav#spBootstrap .open#spBootstrap .dropdown-menu>.disabled>a:focus {
+    color: #444;
+    background-color: transparent;
+}
+}  #spBootstrap .navbar-inverse#spBootstrap .navbar-link {
+    color: #777;
+}  #spBootstrap .navbar-inverse#spBootstrap .navbar-link:hover {
+    color: #fff;
+}  #spBootstrap .navbar-inverse#spBootstrap .btn-link {
+    color: #777;
+}  #spBootstrap .navbar-inverse#spBootstrap .btn-link:hover,#spBootstrap .navbar-inverse#spBootstrap .btn-link:focus {
+    color: #fff;
+}  #spBootstrap .navbar-inverse#spBootstrap .btn-link[disabled]:hover, fieldset[disabled]#spBootstrap .navbar-inverse#spBootstrap .btn-link:hover,#spBootstrap .navbar-inverse#spBootstrap .btn-link[disabled]:focus, fieldset[disabled]#spBootstrap .navbar-inverse#spBootstrap .btn-link:focus {
+    color: #444;
+}  #spBootstrap .breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}  #spBootstrap .breadcrumb>li {
+    display: inline-block;
+}  #spBootstrap .breadcrumb>li+li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0"}  #spBootstrap .breadcrumb>.active {
+    color: #777;
+}  #spBootstrap .pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}  #spBootstrap .pagination>li {
+    display: inline;
+}  #spBootstrap .pagination>li>a,#spBootstrap .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #428bca;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}  #spBootstrap .pagination>li:first-child>a,#spBootstrap .pagination>li:first-child>span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}  #spBootstrap .pagination>li:last-child>a,#spBootstrap .pagination>li:last-child>span {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}  #spBootstrap .pagination>li>a:hover,#spBootstrap .pagination>li>span:hover,#spBootstrap .pagination>li>a:focus,#spBootstrap .pagination>li>span:focus {
+    color: #2a6496;
+    background-color: #eee;
+    border-color: #ddd;
+}  #spBootstrap .pagination>.active>a,#spBootstrap .pagination>.active>span,#spBootstrap .pagination>.active>a:hover,#spBootstrap .pagination>.active>span:hover,#spBootstrap .pagination>.active>a:focus,#spBootstrap .pagination>.active>span:focus {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #428bca;
+    border-color: #428bca;
+}  #spBootstrap .pagination>.disabled>span,#spBootstrap .pagination>.disabled>span:hover,#spBootstrap .pagination>.disabled>span:focus,#spBootstrap .pagination>.disabled>a,#spBootstrap .pagination>.disabled>a:hover,#spBootstrap .pagination>.disabled>a:focus {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #ddd;
+}  #spBootstrap .pagination-lg>li>a,#spBootstrap .pagination-lg>li>span {
+    padding: 10px 16px;
+    font-size: 18px;
+}  #spBootstrap .pagination-lg>li:first-child>a,#spBootstrap .pagination-lg>li:first-child>span {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}  #spBootstrap .pagination-lg>li:last-child>a,#spBootstrap .pagination-lg>li:last-child>span {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}  #spBootstrap .pagination-sm>li>a,#spBootstrap .pagination-sm>li>span {
+    padding: 5px 10px;
+    font-size: 12px;
+}  #spBootstrap .pagination-sm>li:first-child>a,#spBootstrap .pagination-sm>li:first-child>span {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}  #spBootstrap .pagination-sm>li:last-child>a,#spBootstrap .pagination-sm>li:last-child>span {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}  #spBootstrap .pager {
+    padding-left: 0;
+    margin: 20px 0;
+    text-align: center;
+    list-style: none;
+}  #spBootstrap .pager li {
+    display: inline;
+}  #spBootstrap .pager li>a,#spBootstrap .pager li>span {
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}  #spBootstrap .pager li>a:hover,#spBootstrap .pager li>a:focus {
+    text-decoration: none;
+    background-color: #eee;
+}  #spBootstrap .pager#spBootstrap .next>a,#spBootstrap .pager#spBootstrap .next>span {
+    float: right;
+}  #spBootstrap .pager#spBootstrap .previous>a,#spBootstrap .pager#spBootstrap .previous>span {
+    float: left;
+}  #spBootstrap .pager#spBootstrap .disabled>a,#spBootstrap .pager#spBootstrap .disabled>a:hover,#spBootstrap .pager#spBootstrap .disabled>a:focus,#spBootstrap .pager#spBootstrap .disabled>span {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+}  #spBootstrap .label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}  #spBootstrap a.label:hover, a.label:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}  #spBootstrap .label:empty {
+    display: none;
+}  #spBootstrap .btn#spBootstrap .label {
+    position: relative;
+    top: -1px;
+}  #spBootstrap .label-default {
+    background-color: #777;
+}  #spBootstrap .label-default[href]:hover,#spBootstrap .label-default[href]:focus {
+    background-color: #5e5e5e;
+}  #spBootstrap .label-primary {
+    background-color: #428bca;
+}  #spBootstrap .label-primary[href]:hover,#spBootstrap .label-primary[href]:focus {
+    background-color: #3071a9;
+}  #spBootstrap .label-success {
+    background-color: #5cb85c;
+}  #spBootstrap .label-success[href]:hover,#spBootstrap .label-success[href]:focus {
+    background-color: #449d44;
+}  #spBootstrap .label-info {
+    background-color: #5bc0de;
+}  #spBootstrap .label-info[href]:hover,#spBootstrap .label-info[href]:focus {
+    background-color: #31b0d5;
+}  #spBootstrap .label-warning {
+    background-color: #f0ad4e;
+}  #spBootstrap .label-warning[href]:hover,#spBootstrap .label-warning[href]:focus {
+    background-color: #ec971f;
+}  #spBootstrap .label-danger {
+    background-color: #d9534f;
+}  #spBootstrap .label-danger[href]:hover,#spBootstrap .label-danger[href]:focus {
+    background-color: #c9302c;
+}  #spBootstrap .badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #777;
+    border-radius: 10px;
+}  #spBootstrap .badge:empty {
+    display: none;
+}  #spBootstrap .btn#spBootstrap .badge {
+    position: relative;
+    top: -1px;
+}  #spBootstrap .btn-xs#spBootstrap .badge {
+    top: 0;
+    padding: 1px 5px;
+}  #spBootstrap a.badge:hover, a.badge:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}  #spBootstrap a.list-group-item.active>.badge,#spBootstrap .nav-pills>.active>a>.badge {
+    color: #428bca;
+    background-color: #fff;
+}  #spBootstrap .nav-pills>li>a>.badge {
+    margin-left: 3px;
+}  #spBootstrap .jumbotron {
+    padding: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #eee;
+}  #spBootstrap .jumbotron h1,#spBootstrap .jumbotron#spBootstrap .h1 {
+    color: inherit;
+}  #spBootstrap .jumbotron p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+}  #spBootstrap .jumbotron>hr {
+    border-top-color: #d5d5d5;
+}  #spBootstrap .container#spBootstrap .jumbotron {
+    border-radius: 6px;
+}  #spBootstrap .jumbotron#spBootstrap .container {
+    max-width: 100%}
+@media screen and (min-width:768px) {
+   #spBootstrap .jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}  #spBootstrap .container#spBootstrap .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+}  #spBootstrap .jumbotron h1,#spBootstrap .jumbotron#spBootstrap .h1 {
+    font-size: 63px;
+}
+}  #spBootstrap .thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}  #spBootstrap .thumbnail>img,#spBootstrap .thumbnail a>img {
+    margin-right: auto;
+    margin-left: auto;
+}  #spBootstrap a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
+    border-color: #428bca;
+}  #spBootstrap .thumbnail#spBootstrap .caption {
+    padding: 9px;
+    color: #333;
+}  #spBootstrap .alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}  #spBootstrap .alert h4 {
+    margin-top: 0;
+    color: inherit;
+}  #spBootstrap .alert#spBootstrap .alert-link {
+    font-weight: 700;
+}  #spBootstrap .alert>p,#spBootstrap .alert>ul {
+    margin-bottom: 0;
+}  #spBootstrap .alert>p+p {
+    margin-top: 5px;
+}  #spBootstrap .alert-dismissable,#spBootstrap .alert-dismissible {
+    padding-right: 35px;
+}  #spBootstrap .alert-dismissable#spBootstrap .close,#spBootstrap .alert-dismissible#spBootstrap .close {
+    position: relative;
+    top: -2px;
+    right: -21px;
+    color: inherit;
+}  #spBootstrap .alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}  #spBootstrap .alert-success hr {
+    border-top-color: #c9e2b3;
+}  #spBootstrap .alert-success#spBootstrap .alert-link {
+    color: #2b542c;
+}  #spBootstrap .alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}  #spBootstrap .alert-info hr {
+    border-top-color: #a6e1ec;
+}  #spBootstrap .alert-info#spBootstrap .alert-link {
+    color: #245269;
+}  #spBootstrap .alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}  #spBootstrap .alert-warning hr {
+    border-top-color: #f7e1b5;
+}  #spBootstrap .alert-warning#spBootstrap .alert-link {
+    color: #66512c;
+}  #spBootstrap .alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}  #spBootstrap .alert-danger hr {
+    border-top-color: #e4b9c0;
+}  #spBootstrap .alert-danger#spBootstrap .alert-link {
+    color: #843534;
+}
+@-webkit-keyframes progress-bar-stripes {
+    from {
+    background-position: 40px 0;
+}  to {
+    background-position: 0 0;
+
+}
+}
+@-o-keyframes progress-bar-stripes {
+    from {
+    background-position: 40px 0;
+}  to {
+    background-position: 0 0;
+
+}
+}
+@keyframes progress-bar-stripes {
+    from {
+    background-position: 40px 0;
+}  to {
+    background-position: 0 0;
+
+}
+}
+  #spBootstrap .progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+}  #spBootstrap .progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #428bca;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}  #spBootstrap .progress-striped,#spBootstrap .progress-bar,#spBootstrap .progress-bar-striped {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    -webkit-background-size: 40px 40px;
+    background-size: 40px 40px;
+}  #spBootstrap .progress.active,#spBootstrap .progress-bar,#spBootstrap .progress-bar.active {
+    -webkit-animation: progress-bar-stripes 2s linear infinite;
+    -o-animation: progress-bar-stripes 2s linear infinite;
+    animation: progress-bar-stripes 2s linear infinite;
+}  #spBootstrap .progress-bar[aria-valuenow="1"],#spBootstrap .progress-bar[aria-valuenow="2"] {
+    min-width: 30px;
+}  #spBootstrap .progress-bar[aria-valuenow="0"] {
+    min-width: 30px;
+    color: #777;
+    background-color: transparent;
+    background-image: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}  #spBootstrap .progress-bar-success {
+    background-color: #5cb85c;
+}  #spBootstrap .progress-striped,#spBootstrap .progress-bar-success {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}  #spBootstrap .progress-bar-info {
+    background-color: #5bc0de;
+}  #spBootstrap .progress-striped,#spBootstrap .progress-bar-info {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}  #spBootstrap .progress-bar-warning {
+    background-color: #f0ad4e;
+}  #spBootstrap .progress-striped,#spBootstrap .progress-bar-warning {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}  #spBootstrap .progress-bar-danger {
+    background-color: #d9534f;
+}  #spBootstrap .progress-striped,#spBootstrap .progress-bar-danger {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}  #spBootstrap .media,#spBootstrap .media-body {
+    overflow: hidden;
+    zoom: 1;
+}  #spBootstrap .media,#spBootstrap .media#spBootstrap .media {
+    margin-top: 15px;
+}  #spBootstrap .media:first-child {
+    margin-top: 0;
+}  #spBootstrap .media-object {
+    display: block;
+}  #spBootstrap .media-heading {
+    margin: 0 0 5px;
+}  #spBootstrap .media>.pull-left {
+    margin-right: 10px;
+}  #spBootstrap .media>.pull-right {
+    margin-left: 10px;
+}  #spBootstrap .media-list {
+    padding-left: 0;
+    list-style: none;
+}  #spBootstrap .list-group {
+    padding-left: 0;
+    margin-bottom: 20px;
+}  #spBootstrap .list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}  #spBootstrap .list-group-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}  #spBootstrap .list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}  #spBootstrap .list-group-item>.badge {
+    float: right;
+}  #spBootstrap .list-group-item>.badge+.badge {
+    margin-right: 5px;
+}  #spBootstrap a.list-group-item {
+    color: #555;
+}  #spBootstrap a.list-group-item#spBootstrap .list-group-item-heading {
+    color: #333;
+}  #spBootstrap a.list-group-item:hover, a.list-group-item:focus {
+    color: #555;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}  #spBootstrap .list-group-item.disabled,#spBootstrap .list-group-item.disabled:hover,#spBootstrap .list-group-item.disabled:focus {
+    color: #777;
+    background-color: #eee;
+}  #spBootstrap .list-group-item.disabled#spBootstrap .list-group-item-heading,#spBootstrap .list-group-item.disabled:hover#spBootstrap .list-group-item-heading,#spBootstrap .list-group-item.disabled:focus#spBootstrap .list-group-item-heading {
+    color: inherit;
+}  #spBootstrap .list-group-item.disabled#spBootstrap .list-group-item-text,#spBootstrap .list-group-item.disabled:hover#spBootstrap .list-group-item-text,#spBootstrap .list-group-item.disabled:focus#spBootstrap .list-group-item-text {
+    color: #777;
+}  #spBootstrap .list-group-item.active,#spBootstrap .list-group-item.active:hover,#spBootstrap .list-group-item.active:focus {
+    z-index: 2;
+    color: #fff;
+    background-color: #428bca;
+    border-color: #428bca;
+}  #spBootstrap .list-group-item.active#spBootstrap .list-group-item-heading,#spBootstrap .list-group-item.active:hover#spBootstrap .list-group-item-heading,#spBootstrap .list-group-item.active:focus#spBootstrap .list-group-item-heading,#spBootstrap .list-group-item.active#spBootstrap .list-group-item-heading>small,#spBootstrap .list-group-item.active:hover#spBootstrap .list-group-item-heading>small,#spBootstrap .list-group-item.active:focus#spBootstrap .list-group-item-heading>small,#spBootstrap .list-group-item.active#spBootstrap .list-group-item-heading>.small,#spBootstrap .list-group-item.active:hover#spBootstrap .list-group-item-heading>.small,#spBootstrap .list-group-item.active:focus#spBootstrap .list-group-item-heading>.small {
+    color: inherit;
+}  #spBootstrap .list-group-item.active#spBootstrap .list-group-item-text,#spBootstrap .list-group-item.active:hover#spBootstrap .list-group-item-text,#spBootstrap .list-group-item.active:focus#spBootstrap .list-group-item-text {
+    color: #e1edf7;
+}  #spBootstrap .list-group-item-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+}  #spBootstrap a.list-group-item-success {
+    color: #3c763d;
+}  #spBootstrap a.list-group-item-success#spBootstrap .list-group-item-heading {
+    color: inherit;
+}  #spBootstrap a.list-group-item-success:hover, a.list-group-item-success:focus {
+    color: #3c763d;
+    background-color: #d0e9c6;
+}  #spBootstrap a.list-group-item-success.active, a.list-group-item-success.active:hover, a.list-group-item-success.active:focus {
+    color: #fff;
+    background-color: #3c763d;
+    border-color: #3c763d;
+}  #spBootstrap .list-group-item-info {
+    color: #31708f;
+    background-color: #d9edf7;
+}  #spBootstrap a.list-group-item-info {
+    color: #31708f;
+}  #spBootstrap a.list-group-item-info#spBootstrap .list-group-item-heading {
+    color: inherit;
+}  #spBootstrap a.list-group-item-info:hover, a.list-group-item-info:focus {
+    color: #31708f;
+    background-color: #c4e3f3;
+}  #spBootstrap a.list-group-item-info.active, a.list-group-item-info.active:hover, a.list-group-item-info.active:focus {
+    color: #fff;
+    background-color: #31708f;
+    border-color: #31708f;
+}  #spBootstrap .list-group-item-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+}  #spBootstrap a.list-group-item-warning {
+    color: #8a6d3b;
+}  #spBootstrap a.list-group-item-warning#spBootstrap .list-group-item-heading {
+    color: inherit;
+}  #spBootstrap a.list-group-item-warning:hover, a.list-group-item-warning:focus {
+    color: #8a6d3b;
+    background-color: #faf2cc;
+}  #spBootstrap a.list-group-item-warning.active, a.list-group-item-warning.active:hover, a.list-group-item-warning.active:focus {
+    color: #fff;
+    background-color: #8a6d3b;
+    border-color: #8a6d3b;
+}  #spBootstrap .list-group-item-danger {
+    color: #a94442;
+    background-color: #f2dede;
+}  #spBootstrap a.list-group-item-danger {
+    color: #a94442;
+}  #spBootstrap a.list-group-item-danger#spBootstrap .list-group-item-heading {
+    color: inherit;
+}  #spBootstrap a.list-group-item-danger:hover, a.list-group-item-danger:focus {
+    color: #a94442;
+    background-color: #ebcccc;
+}  #spBootstrap a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
+    color: #fff;
+    background-color: #a94442;
+    border-color: #a94442;
+}  #spBootstrap .list-group-item-heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+}  #spBootstrap .list-group-item-text {
+    margin-bottom: 0;
+    line-height: 1.3;
+}  #spBootstrap .panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}  #spBootstrap .panel-body {
+    padding: 15px;
+}  #spBootstrap .panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}  #spBootstrap .panel-heading>.dropdown#spBootstrap .dropdown-toggle {
+    color: inherit;
+}  #spBootstrap .panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+}  #spBootstrap .panel-title>a {
+    color: inherit;
+}  #spBootstrap .panel-footer {
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}  #spBootstrap .panel>.list-group {
+    margin-bottom: 0;
+}  #spBootstrap .panel>.list-group#spBootstrap .list-group-item {
+    border-width: 1px 0;
+    border-radius: 0;
+}  #spBootstrap .panel>.list-group:first-child#spBootstrap .list-group-item:first-child {
+    border-top: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}  #spBootstrap .panel>.list-group:last-child#spBootstrap .list-group-item:last-child {
+    border-bottom: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}  #spBootstrap .panel-heading+.list-group#spBootstrap .list-group-item:first-child {
+    border-top-width: 0;
+}  #spBootstrap .list-group+.panel-footer {
+    border-top-width: 0;
+}  #spBootstrap .panel>.table,#spBootstrap .panel>.table-responsive>.table,#spBootstrap .panel>.panel-collapse>.table {
+    margin-bottom: 0;
+}  #spBootstrap .panel>.table:first-child,#spBootstrap .panel>.table-responsive:first-child>.table:first-child {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}  #spBootstrap .panel>.table:first-child>thead:first-child>tr:first-child td:first-child,#spBootstrap .panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child td:first-child,#spBootstrap .panel>.table:first-child>tbody:first-child>tr:first-child td:first-child,#spBootstrap .panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child td:first-child,#spBootstrap .panel>.table:first-child>thead:first-child>tr:first-child th:first-child,#spBootstrap .panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child th:first-child,#spBootstrap .panel>.table:first-child>tbody:first-child>tr:first-child th:first-child,#spBootstrap .panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child th:first-child {
+    border-top-left-radius: 3px;
+}  #spBootstrap .panel>.table:first-child>thead:first-child>tr:first-child td:last-child,#spBootstrap .panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child td:last-child,#spBootstrap .panel>.table:first-child>tbody:first-child>tr:first-child td:last-child,#spBootstrap .panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child td:last-child,#spBootstrap .panel>.table:first-child>thead:first-child>tr:first-child th:last-child,#spBootstrap .panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child th:last-child,#spBootstrap .panel>.table:first-child>tbody:first-child>tr:first-child th:last-child,#spBootstrap .panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child th:last-child {
+    border-top-right-radius: 3px;
+}  #spBootstrap .panel>.table:last-child,#spBootstrap .panel>.table-responsive:last-child>.table:last-child {
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}  #spBootstrap .panel>.table:last-child>tbody:last-child>tr:last-child td:first-child,#spBootstrap .panel>.table-responsive:last-child>.table:last-child>tbody:last-child>tr:last-child td:first-child,#spBootstrap .panel>.table:last-child>tfoot:last-child>tr:last-child td:first-child,#spBootstrap .panel>.table-responsive:last-child>.table:last-child>tfoot:last-child>tr:last-child td:first-child,#spBootstrap .panel>.table:last-child>tbody:last-child>tr:last-child th:first-child,#spBootstrap .panel>.table-responsive:last-child>.table:last-child>tbody:last-child>tr:last-child th:first-child,#spBootstrap .panel>.table:last-child>tfoot:last-child>tr:last-child th:first-child,#spBootstrap .panel>.table-responsive:last-child>.table:last-child>tfoot:last-child>tr:last-child th:first-child {
+    border-bottom-left-radius: 3px;
+}  #spBootstrap .panel>.table:last-child>tbody:last-child>tr:last-child td:last-child,#spBootstrap .panel>.table-responsive:last-child>.table:last-child>tbody:last-child>tr:last-child td:last-child,#spBootstrap .panel>.table:last-child>tfoot:last-child>tr:last-child td:last-child,#spBootstrap .panel>.table-responsive:last-child>.table:last-child>tfoot:last-child>tr:last-child td:last-child,#spBootstrap .panel>.table:last-child>tbody:last-child>tr:last-child th:last-child,#spBootstrap .panel>.table-responsive:last-child>.table:last-child>tbody:last-child>tr:last-child th:last-child,#spBootstrap .panel>.table:last-child>tfoot:last-child>tr:last-child th:last-child,#spBootstrap .panel>.table-responsive:last-child>.table:last-child>tfoot:last-child>tr:last-child th:last-child {
+    border-bottom-right-radius: 3px;
+}  #spBootstrap .panel>.panel-body+.table,#spBootstrap .panel>.panel-body+.table-responsive {
+    border-top: 1px solid #ddd;
+}  #spBootstrap .panel>.table>tbody:first-child>tr:first-child th,#spBootstrap .panel>.table>tbody:first-child>tr:first-child td {
+    border-top: 0;
+}  #spBootstrap .panel>.table-bordered,#spBootstrap .panel>.table-responsive>.table-bordered {
+    border: 0;
+}  #spBootstrap .panel>.table-bordered>thead>tr>th:first-child,#spBootstrap .panel>.table-responsive>.table-bordered>thead>tr>th:first-child,#spBootstrap .panel>.table-bordered>tbody>tr>th:first-child,#spBootstrap .panel>.table-responsive>.table-bordered>tbody>tr>th:first-child,#spBootstrap .panel>.table-bordered>tfoot>tr>th:first-child,#spBootstrap .panel>.table-responsive>.table-bordered>tfoot>tr>th:first-child,#spBootstrap .panel>.table-bordered>thead>tr>td:first-child,#spBootstrap .panel>.table-responsive>.table-bordered>thead>tr>td:first-child,#spBootstrap .panel>.table-bordered>tbody>tr>td:first-child,#spBootstrap .panel>.table-responsive>.table-bordered>tbody>tr>td:first-child,#spBootstrap .panel>.table-bordered>tfoot>tr>td:first-child,#spBootstrap .panel>.table-responsive>.table-bordered>tfoot>tr>td:first-child {
+    border-left: 0;
+}  #spBootstrap .panel>.table-bordered>thead>tr>th:last-child,#spBootstrap .panel>.table-responsive>.table-bordered>thead>tr>th:last-child,#spBootstrap .panel>.table-bordered>tbody>tr>th:last-child,#spBootstrap .panel>.table-responsive>.table-bordered>tbody>tr>th:last-child,#spBootstrap .panel>.table-bordered>tfoot>tr>th:last-child,#spBootstrap .panel>.table-responsive>.table-bordered>tfoot>tr>th:last-child,#spBootstrap .panel>.table-bordered>thead>tr>td:last-child,#spBootstrap .panel>.table-responsive>.table-bordered>thead>tr>td:last-child,#spBootstrap .panel>.table-bordered>tbody>tr>td:last-child,#spBootstrap .panel>.table-responsive>.table-bordered>tbody>tr>td:last-child,#spBootstrap .panel>.table-bordered>tfoot>tr>td:last-child,#spBootstrap .panel>.table-responsive>.table-bordered>tfoot>tr>td:last-child {
+    border-right: 0;
+}  #spBootstrap .panel>.table-bordered>thead>tr:first-child>td,#spBootstrap .panel>.table-responsive>.table-bordered>thead>tr:first-child>td,#spBootstrap .panel>.table-bordered>tbody>tr:first-child>td,#spBootstrap .panel>.table-responsive>.table-bordered>tbody>tr:first-child>td,#spBootstrap .panel>.table-bordered>thead>tr:first-child>th,#spBootstrap .panel>.table-responsive>.table-bordered>thead>tr:first-child>th,#spBootstrap .panel>.table-bordered>tbody>tr:first-child>th,#spBootstrap .panel>.table-responsive>.table-bordered>tbody>tr:first-child>th {
+    border-bottom: 0;
+}  #spBootstrap .panel>.table-bordered>tbody>tr:last-child>td,#spBootstrap .panel>.table-responsive>.table-bordered>tbody>tr:last-child>td,#spBootstrap .panel>.table-bordered>tfoot>tr:last-child>td,#spBootstrap .panel>.table-responsive>.table-bordered>tfoot>tr:last-child>td,#spBootstrap .panel>.table-bordered>tbody>tr:last-child>th,#spBootstrap .panel>.table-responsive>.table-bordered>tbody>tr:last-child>th,#spBootstrap .panel>.table-bordered>tfoot>tr:last-child>th,#spBootstrap .panel>.table-responsive>.table-bordered>tfoot>tr:last-child>th {
+    border-bottom: 0;
+}  #spBootstrap .panel>.table-responsive {
+    margin-bottom: 0;
+    border: 0;
+}  #spBootstrap .panel-group {
+    margin-bottom: 20px;
+}  #spBootstrap .panel-group#spBootstrap .panel {
+    margin-bottom: 0;
+    border-radius: 4px;
+}  #spBootstrap .panel-group#spBootstrap .panel+.panel {
+    margin-top: 5px;
+}  #spBootstrap .panel-group#spBootstrap .panel-heading {
+    border-bottom: 0;
+}  #spBootstrap .panel-group#spBootstrap .panel-heading+.panel-collapse>.panel-body {
+    border-top: 1px solid #ddd;
+}  #spBootstrap .panel-group#spBootstrap .panel-footer {
+    border-top: 0;
+}  #spBootstrap .panel-group#spBootstrap .panel-footer+.panel-collapse#spBootstrap .panel-body {
+    border-bottom: 1px solid #ddd;
+}  #spBootstrap .panel-default {
+    border-color: #ddd;
+}  #spBootstrap .panel-default>.panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}  #spBootstrap .panel-default>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color: #ddd;
+}  #spBootstrap .panel-default>.panel-heading#spBootstrap .badge {
+    color: #f5f5f5;
+    background-color: #333;
+}  #spBootstrap .panel-default>.panel-footer+.panel-collapse>.panel-body {
+    border-bottom-color: #ddd;
+}  #spBootstrap .panel-primary {
+    border-color: #428bca;
+}  #spBootstrap .panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #428bca;
+}  #spBootstrap .panel-primary>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color: #428bca;
+}  #spBootstrap .panel-primary>.panel-heading#spBootstrap .badge {
+    color: #428bca;
+    background-color: #fff;
+}  #spBootstrap .panel-primary>.panel-footer+.panel-collapse>.panel-body {
+    border-bottom-color: #428bca;
+}  #spBootstrap .panel-success {
+    border-color: #d6e9c6;
+}  #spBootstrap .panel-success>.panel-heading {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}  #spBootstrap .panel-success>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color: #d6e9c6;
+}  #spBootstrap .panel-success>.panel-heading#spBootstrap .badge {
+    color: #dff0d8;
+    background-color: #3c763d;
+}  #spBootstrap .panel-success>.panel-footer+.panel-collapse>.panel-body {
+    border-bottom-color: #d6e9c6;
+}  #spBootstrap .panel-info {
+    border-color: #bce8f1;
+}  #spBootstrap .panel-info>.panel-heading {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}  #spBootstrap .panel-info>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color: #bce8f1;
+}  #spBootstrap .panel-info>.panel-heading#spBootstrap .badge {
+    color: #d9edf7;
+    background-color: #31708f;
+}  #spBootstrap .panel-info>.panel-footer+.panel-collapse>.panel-body {
+    border-bottom-color: #bce8f1;
+}  #spBootstrap .panel-warning {
+    border-color: #faebcc;
+}  #spBootstrap .panel-warning>.panel-heading {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}  #spBootstrap .panel-warning>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color: #faebcc;
+}  #spBootstrap .panel-warning>.panel-heading#spBootstrap .badge {
+    color: #fcf8e3;
+    background-color: #8a6d3b;
+}  #spBootstrap .panel-warning>.panel-footer+.panel-collapse>.panel-body {
+    border-bottom-color: #faebcc;
+}  #spBootstrap .panel-danger {
+    border-color: #ebccd1;
+}  #spBootstrap .panel-danger>.panel-heading {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}  #spBootstrap .panel-danger>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color: #ebccd1;
+}  #spBootstrap .panel-danger>.panel-heading#spBootstrap .badge {
+    color: #f2dede;
+    background-color: #a94442;
+}  #spBootstrap .panel-danger>.panel-footer+.panel-collapse>.panel-body {
+    border-bottom-color: #ebccd1;
+}  #spBootstrap .embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}  #spBootstrap .embed-responsive#spBootstrap .embed-responsive-item,#spBootstrap .embed-responsive iframe,#spBootstrap .embed-responsive embed,#spBootstrap .embed-responsive object {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}  #spBootstrap .embed-responsive.embed-responsive-16by9 {
+    padding-bottom: 56.25%}  #spBootstrap .embed-responsive.embed-responsive-4by3 {
+    padding-bottom: 75%}  #spBootstrap .well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}  #spBootstrap .well blockquote {
+    border-color: #ddd;
+    border-color: rgba(0, 0, 0, .15);
+}  #spBootstrap .well-lg {
+    padding: 24px;
+    border-radius: 6px;
+}  #spBootstrap .well-sm {
+    padding: 9px;
+    border-radius: 3px;
+}  #spBootstrap .close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}  #spBootstrap .close:hover,#spBootstrap .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    opacity: .5;
+}  #spBootstrap button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+}  #spBootstrap .modal-open {
+    overflow: hidden;
+}  #spBootstrap .modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}  #spBootstrap .modal.fade#spBootstrap .modal-dialog {
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    -webkit-transform: translate3d(0, -25%, 0);
+    -o-transform: translate3d(0, -25%, 0);
+    transform: translate3d(0, -25%, 0);
+}  #spBootstrap .modal.in#spBootstrap .modal-dialog {
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}  #spBootstrap .modal-open#spBootstrap .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}  #spBootstrap .modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}  #spBootstrap .modal-content {
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}  #spBootstrap .modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+}  #spBootstrap .modal-backdrop.fade {
+    filter: alpha(opacity=0);
+    opacity: 0;
+}  #spBootstrap .modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .5;
+}  #spBootstrap .modal-header {
+    min-height: 16.43px;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}  #spBootstrap .modal-header#spBootstrap .close {
+    margin-top: -2px;
+}  #spBootstrap .modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+}  #spBootstrap .modal-body {
+    position: relative;
+    padding: 15px;
+}  #spBootstrap .modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}  #spBootstrap .modal-footer#spBootstrap .btn+.btn {
+    margin-bottom: 0;
+    margin-left: 5px;
+}  #spBootstrap .modal-footer#spBootstrap .btn-group#spBootstrap .btn+.btn {
+    margin-left: -1px;
+}  #spBootstrap .modal-footer#spBootstrap .btn-block+.btn-block {
+    margin-left: 0;
+}  #spBootstrap .modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+}
+@media (min-width:768px) {
+   #spBootstrap .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+}  #spBootstrap .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}  #spBootstrap .modal-sm {
+    width: 300px;
+}
+}@media (min-width:992px) {
+   #spBootstrap .modal-lg {
+    width: 900px;
+}
+}  #spBootstrap .tooltip {
+    position: absolute;
+    z-index: 1070;
+    display: block;
+    font-size: 12px;
+    line-height: 1.4;
+    visibility: visible;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}  #spBootstrap .tooltip.in {
+    filter: alpha(opacity=90);
+    opacity: .9;
+}  #spBootstrap .tooltip.top {
+    padding: 5px 0;
+    margin-top: -3px;
+}  #spBootstrap .tooltip.right {
+    padding: 0 5px;
+    margin-left: 3px;
+}  #spBootstrap .tooltip.bottom {
+    padding: 5px 0;
+    margin-top: 3px;
+}  #spBootstrap .tooltip.left {
+    padding: 0 5px;
+    margin-left: -3px;
+}  #spBootstrap .tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background-color: #000;
+    border-radius: 4px;
+}  #spBootstrap .tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}  #spBootstrap .tooltip.top#spBootstrap .tooltip-arrow {
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: #000;
+}  #spBootstrap .tooltip.top-left#spBootstrap .tooltip-arrow {
+    bottom: 0;
+    left: 5px;
+    border-width: 5px 5px 0;
+    border-top-color: #000;
+}  #spBootstrap .tooltip.top-right#spBootstrap .tooltip-arrow {
+    right: 5px;
+    bottom: 0;
+    border-width: 5px 5px 0;
+    border-top-color: #000;
+}  #spBootstrap .tooltip.right#spBootstrap .tooltip-arrow {
+    top: 50%;
+    left: 0;
+    margin-top: -5px;
+    border-width: 5px 5px 5px 0;
+    border-right-color: #000;
+}  #spBootstrap .tooltip.left#spBootstrap .tooltip-arrow {
+    top: 50%;
+    right: 0;
+    margin-top: -5px;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #000;
+}  #spBootstrap .tooltip.bottom#spBootstrap .tooltip-arrow {
+    top: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #000;
+}  #spBootstrap .tooltip.bottom-left#spBootstrap .tooltip-arrow {
+    top: 0;
+    left: 5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #000;
+}  #spBootstrap .tooltip.bottom-right#spBootstrap .tooltip-arrow {
+    top: 0;
+    right: 5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #000;
+}  #spBootstrap .popover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1060;
+    display: none;
+    max-width: 276px;
+    padding: 1px;
+    text-align: left;
+    white-space: normal;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}  #spBootstrap .popover.top {
+    margin-top: -10px;
+}  #spBootstrap .popover.right {
+    margin-left: 10px;
+}  #spBootstrap .popover.bottom {
+    margin-top: 10px;
+}  #spBootstrap .popover.left {
+    margin-left: -10px;
+}  #spBootstrap .popover-title {
+    padding: 8px 14px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 5px 5px 0 0;
+}  #spBootstrap .popover-content {
+    padding: 9px 14px;
+}  #spBootstrap .popover>.arrow,#spBootstrap .popover>.arrow:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}  #spBootstrap .popover>.arrow {
+    border-width: 11px;
+}  #spBootstrap .popover>.arrow:after {
+    content: "";
+    border-width: 10px;
+}  #spBootstrap .popover.top>.arrow {
+    bottom: -11px;
+    left: 50%;
+    margin-left: -11px;
+    border-top-color: #999;
+    border-top-color: rgba(0, 0, 0, .25);
+    border-bottom-width: 0;
+}  #spBootstrap .popover.top>.arrow:after {
+    bottom: 1px;
+    margin-left: -10px;
+    content: " ";
+    border-top-color: #fff;
+    border-bottom-width: 0;
+}  #spBootstrap .popover.right>.arrow {
+    top: 50%;
+    left: -11px;
+    margin-top: -11px;
+    border-right-color: #999;
+    border-right-color: rgba(0, 0, 0, .25);
+    border-left-width: 0;
+}  #spBootstrap .popover.right>.arrow:after {
+    bottom: -10px;
+    left: 1px;
+    content: " ";
+    border-right-color: #fff;
+    border-left-width: 0;
+}  #spBootstrap .popover.bottom>.arrow {
+    top: -11px;
+    left: 50%;
+    margin-left: -11px;
+    border-top-width: 0;
+    border-bottom-color: #999;
+    border-bottom-color: rgba(0, 0, 0, .25);
+}  #spBootstrap .popover.bottom>.arrow:after {
+    top: 1px;
+    margin-left: -10px;
+    content: " ";
+    border-top-width: 0;
+    border-bottom-color: #fff;
+}  #spBootstrap .popover.left>.arrow {
+    top: 50%;
+    right: -11px;
+    margin-top: -11px;
+    border-right-width: 0;
+    border-left-color: #999;
+    border-left-color: rgba(0, 0, 0, .25);
+}  #spBootstrap .popover.left>.arrow:after {
+    right: 1px;
+    bottom: -10px;
+    content: " ";
+    border-right-width: 0;
+    border-left-color: #fff;
+}  #spBootstrap .carousel {
+    position: relative;
+}  #spBootstrap .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}  #spBootstrap .carousel-inner>.item {
+    position: relative;
+    display: none;
+    -webkit-transition: .6s ease-in-out left;
+    -o-transition: .6s ease-in-out left;
+    transition: .6s ease-in-out left;
+}  #spBootstrap .carousel-inner>.item>img,#spBootstrap .carousel-inner>.item>a>img {
+    line-height: 1;
+}  #spBootstrap .carousel-inner>.active,#spBootstrap .carousel-inner>.next,#spBootstrap .carousel-inner>.prev {
+    display: block;
+}  #spBootstrap .carousel-inner>.active {
+    left: 0;
+}  #spBootstrap .carousel-inner>.next,#spBootstrap .carousel-inner>.prev {
+    position: absolute;
+    top: 0;
+    width: 100%}  #spBootstrap .carousel-inner>.next {
+    left: 100%}  #spBootstrap .carousel-inner>.prev {
+    left: -100%}  #spBootstrap .carousel-inner>.next.left,#spBootstrap .carousel-inner>.prev.right {
+    left: 0;
+}  #spBootstrap .carousel-inner>.active.left {
+    left: -100%}  #spBootstrap .carousel-inner>.active.right {
+    left: 100%}  #spBootstrap .carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    filter: alpha(opacity=50);
+    opacity: .5;
+}  #spBootstrap .carousel-control.left {
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000',  endColorstr='#00000000',  GradientType=1);
+    background-repeat: repeat-x;
+}  #spBootstrap .carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',  endColorstr='#80000000',  GradientType=1);
+    background-repeat: repeat-x;
+}  #spBootstrap .carousel-control:hover,#spBootstrap .carousel-control:focus {
+    color: #fff;
+    text-decoration: none;
+    filter: alpha(opacity=90);
+    outline: 0;
+    opacity: .9;
+}  #spBootstrap .carousel-control#spBootstrap .icon-prev,#spBootstrap .carousel-control#spBootstrap .icon-next,#spBootstrap .carousel-control#spBootstrap .glyphicon-chevron-left,#spBootstrap .carousel-control#spBootstrap .glyphicon-chevron-right {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+}  #spBootstrap .carousel-control#spBootstrap .icon-prev,#spBootstrap .carousel-control#spBootstrap .glyphicon-chevron-left {
+    left: 50%;
+    margin-left: -10px;
+}  #spBootstrap .carousel-control#spBootstrap .icon-next,#spBootstrap .carousel-control#spBootstrap .glyphicon-chevron-right {
+    right: 50%;
+    margin-right: -10px;
+}  #spBootstrap .carousel-control#spBootstrap .icon-prev,#spBootstrap .carousel-control#spBootstrap .icon-next {
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    font-family: serif;
+}  #spBootstrap .carousel-control#spBootstrap .icon-prev:before {
+    content: '\2039'}  #spBootstrap .carousel-control#spBootstrap .icon-next:before {
+    content: '\203a'}  #spBootstrap .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}  #spBootstrap .carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+    border-radius: 10px;
+}  #spBootstrap .carousel-indicators#spBootstrap .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #fff;
+}  #spBootstrap .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}  #spBootstrap .carousel-caption#spBootstrap .btn {
+    text-shadow: none;
+}
+@media screen and (min-width:768px) {
+   #spBootstrap .carousel-control#spBootstrap .glyphicon-chevron-left,#spBootstrap .carousel-control#spBootstrap .glyphicon-chevron-right,#spBootstrap .carousel-control#spBootstrap .icon-prev,#spBootstrap .carousel-control#spBootstrap .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    font-size: 30px;
+}  #spBootstrap .carousel-control#spBootstrap .glyphicon-chevron-left,#spBootstrap .carousel-control#spBootstrap .icon-prev {
+    margin-left: -15px;
+}  #spBootstrap .carousel-control#spBootstrap .glyphicon-chevron-right,#spBootstrap .carousel-control#spBootstrap .icon-next {
+    margin-right: -15px;
+}  #spBootstrap .carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 30px;
+}  #spBootstrap .carousel-indicators {
+    bottom: 20px;
+}
+}  #spBootstrap .clearfix:before,#spBootstrap .clearfix:after,#spBootstrap .dl-horizontal dd:before,#spBootstrap .dl-horizontal dd:after,#spBootstrap .container:before,#spBootstrap .container:after,#spBootstrap .container-fluid:before,#spBootstrap .container-fluid:after,#spBootstrap .row:before,#spBootstrap .row:after,#spBootstrap .form-horizontal#spBootstrap .form-group:before,#spBootstrap .form-horizontal#spBootstrap .form-group:after,#spBootstrap .btn-toolbar:before,#spBootstrap .btn-toolbar:after,#spBootstrap .btn-group-vertical>.btn-group:before,#spBootstrap .btn-group-vertical>.btn-group:after,#spBootstrap .nav:before,#spBootstrap .nav:after,#spBootstrap .navbar:before,#spBootstrap .navbar:after,#spBootstrap .navbar-header:before,#spBootstrap .navbar-header:after,#spBootstrap .navbar-collapse:before,#spBootstrap .navbar-collapse:after,#spBootstrap .pager:before,#spBootstrap .pager:after,#spBootstrap .panel-body:before,#spBootstrap .panel-body:after,#spBootstrap .modal-footer:before,#spBootstrap .modal-footer:after {
+    display: table;
+    content: " "}  #spBootstrap .clearfix:after,#spBootstrap .dl-horizontal dd:after,#spBootstrap .container:after,#spBootstrap .container-fluid:after,#spBootstrap .row:after,#spBootstrap .form-horizontal#spBootstrap .form-group:after,#spBootstrap .btn-toolbar:after,#spBootstrap .btn-group-vertical>.btn-group:after,#spBootstrap .nav:after,#spBootstrap .navbar:after,#spBootstrap .navbar-header:after,#spBootstrap .navbar-collapse:after,#spBootstrap .pager:after,#spBootstrap .panel-body:after,#spBootstrap .modal-footer:after {
+    clear: both;
+}  #spBootstrap .center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}  #spBootstrap .pull-right {
+    float: right!important;
+}  #spBootstrap .pull-left {
+    float: left!important;
+}  #spBootstrap .hide {
+    display: none!important;
+}  #spBootstrap .show {
+    display: block!important;
+}  #spBootstrap .invisible {
+    visibility: hidden;
+}  #spBootstrap .text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}  #spBootstrap .hidden {
+    display: none!important;
+    visibility: hidden!important;
+}  #spBootstrap .affix {
+    position: fixed;
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+@-ms-viewport {
+    width: device-width;
+}  #spBootstrap .visible-xs,#spBootstrap .visible-sm,#spBootstrap .visible-md,#spBootstrap .visible-lg {
+    display: none!important;
+}  #spBootstrap .visible-xs-block,#spBootstrap .visible-xs-inline,#spBootstrap .visible-xs-inline-block,#spBootstrap .visible-sm-block,#spBootstrap .visible-sm-inline,#spBootstrap .visible-sm-inline-block,#spBootstrap .visible-md-block,#spBootstrap .visible-md-inline,#spBootstrap .visible-md-inline-block,#spBootstrap .visible-lg-block,#spBootstrap .visible-lg-inline,#spBootstrap .visible-lg-inline-block {
+    display: none!important;
+}
+@media (max-width:767px) {
+   #spBootstrap .visible-xs {
+    display: block!important;
+}
+#spBootstrap table.visible-xs {
+    display: table;
+}
+#spBootstrap tr.visible-xs {
+    display: table-row!important;
+}
+#spBootstrap th.visible-xs, td.visible-xs {
+    display: table-cell!important;
+}
+}@media (max-width:767px) {
+   #spBootstrap .visible-xs-block {
+    display: block!important;
+}
+}@media (max-width:767px) {
+   #spBootstrap .visible-xs-inline {
+    display: inline!important;
+}
+}@media (max-width:767px) {
+   #spBootstrap .visible-xs-inline-block {
+    display: inline-block!important;
+}
+}@media (min-width:768px) and (max-width:991px) {
+   #spBootstrap .visible-sm {
+    display: block!important;
+}
+#spBootstrap table.visible-sm {
+    display: table;
+}
+#spBootstrap tr.visible-sm {
+    display: table-row!important;
+}
+#spBootstrap th.visible-sm, td.visible-sm {
+    display: table-cell!important;
+}
+}@media (min-width:768px) and (max-width:991px) {
+   #spBootstrap .visible-sm-block {
+    display: block!important;
+}
+}@media (min-width:768px) and (max-width:991px) {
+   #spBootstrap .visible-sm-inline {
+    display: inline!important;
+}
+}@media (min-width:768px) and (max-width:991px) {
+   #spBootstrap .visible-sm-inline-block {
+    display: inline-block!important;
+}
+}@media (min-width:992px) and (max-width:1199px) {
+   #spBootstrap .visible-md {
+    display: block!important;
+}
+#spBootstrap table.visible-md {
+    display: table;
+}
+#spBootstrap tr.visible-md {
+    display: table-row!important;
+}
+#spBootstrap th.visible-md, td.visible-md {
+    display: table-cell!important;
+}
+}@media (min-width:992px) and (max-width:1199px) {
+   #spBootstrap .visible-md-block {
+    display: block!important;
+}
+}@media (min-width:992px) and (max-width:1199px) {
+   #spBootstrap .visible-md-inline {
+    display: inline!important;
+}
+}@media (min-width:992px) and (max-width:1199px) {
+   #spBootstrap .visible-md-inline-block {
+    display: inline-block!important;
+}
+}@media (min-width:1200px) {
+   #spBootstrap .visible-lg {
+    display: block!important;
+}
+#spBootstrap table.visible-lg {
+    display: table;
+}
+#spBootstrap tr.visible-lg {
+    display: table-row!important;
+}
+#spBootstrap th.visible-lg, td.visible-lg {
+    display: table-cell!important;
+}
+}@media (min-width:1200px) {
+   #spBootstrap .visible-lg-block {
+    display: block!important;
+}
+}@media (min-width:1200px) {
+   #spBootstrap .visible-lg-inline {
+    display: inline!important;
+}
+}@media (min-width:1200px) {
+   #spBootstrap .visible-lg-inline-block {
+    display: inline-block!important;
+}
+}@media (max-width:767px) {
+   #spBootstrap .hidden-xs {
+    display: none!important;
+}
+}@media (min-width:768px) and (max-width:991px) {
+   #spBootstrap .hidden-sm {
+    display: none!important;
+}
+}@media (min-width:992px) and (max-width:1199px) {
+   #spBootstrap .hidden-md {
+    display: none!important;
+}
+}@media (min-width:1200px) {
+   #spBootstrap .hidden-lg {
+    display: none!important;
+}
+}  #spBootstrap .visible-print {
+    display: none!important;
+}
+@media print {
+   #spBootstrap .visible-print {
+    display: block!important;
+}
+#spBootstrap table.visible-print {
+    display: table;
+}
+#spBootstrap tr.visible-print {
+    display: table-row!important;
+}
+#spBootstrap th.visible-print, td.visible-print {
+    display: table-cell!important;
+}
+}  #spBootstrap .visible-print-block {
+    display: none!important;
+}
+@media print {
+   #spBootstrap .visible-print-block {
+    display: block!important;
+}
+}  #spBootstrap .visible-print-inline {
+    display: none!important;
+}
+@media print {
+   #spBootstrap .visible-print-inline {
+    display: inline!important;
+}
+}  #spBootstrap .visible-print-inline-block {
+    display: none!important;
+}
+@media print {
+   #spBootstrap .visible-print-inline-block {
+    display: inline-block!important;
+}
+}@media print {
+   #spBootstrap .hidden-print {
+    display: none!important;
+}
+}
+
+/*!
+ * Bootstrap-select v1.6.2 (http://silviomoreto.github.io/bootstrap-select/)
+ *
+ * Copyright 2013-2014 bootstrap-select
+ * Licensed under MIT (https://github.com/silviomoreto/bootstrap-select/blob/master/LICENSE)
+ */
+
+.bootstrap-select  {
+    
+  /*width:  220px\9;
+     IE8 and below*/
+  width:  220px \0;
+    
+  /*IE9 and below*/
+}
+.bootstrap-select > .btn  {
+    
+  width:  100%;
+    
+  padding-right:  25px;
+    
+}
+.error .bootstrap-select .btn  {
+    
+  border:  1px solid #b94a48;
+    
+}
+.control-group.error .bootstrap-select .dropdown-toggle  {
+    
+  border-color:  #b94a48;
+    
+}
+.bootstrap-select.fit-width  {
+    
+  width:  auto !important;
+    
+}
+.bootstrap-select: not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn)  {
+    
+  width:  220px;
+    
+}
+.bootstrap-select .btn: focus  {
+    
+  outline:  thin dotted #333333 !important;
+    
+  outline:  5px auto -webkit-focus-ring-color !important;
+    
+  outline-offset:  -2px;
+    
+}
+.bootstrap-select.form-control  {
+    
+  margin-bottom:  0;
+    
+  padding:  0;
+    
+  border:  none;
+    
+}
+.bootstrap-select.form-control: not([class*="col-"])  {
+    
+  width:  100%;
+    
+}
+.bootstrap-select.btn-group: not(.input-group-btn), 
+.bootstrap-select.btn-group[class*="col-"]  {
+    
+  float:  none;
+    
+  display:  inline-block;
+    
+  margin-left:  0;
+    
+}
+.bootstrap-select.btn-group.dropdown-menu-right, 
+.bootstrap-select.btn-group[class*="col-"].dropdown-menu-right, 
+.row-fluid .bootstrap-select.btn-group[class*="col-"].dropdown-menu-right  {
+    
+  float:  right;
+    
+}
+.form-search .bootstrap-select.btn-group, 
+.form-inline .bootstrap-select.btn-group, 
+.form-horizontal .bootstrap-select.btn-group, 
+.form-group .bootstrap-select.btn-group  {
+    
+  margin-bottom:  0;
+    
+}
+.form-group-lg .bootstrap-select.btn-group.form-control, 
+.form-group-sm .bootstrap-select.btn-group.form-control  {
+    
+  padding:  0;
+    
+}
+.form-inline .bootstrap-select.btn-group .form-control  {
+    
+  width:  100%;
+    
+}
+.input-append .bootstrap-select.btn-group  {
+    
+  margin-left:  -1px;
+    
+}
+.input-prepend .bootstrap-select.btn-group  {
+    
+  margin-right:  -1px;
+    
+}
+.bootstrap-select.btn-group > .disabled  {
+    
+  cursor:  not-allowed;
+    
+}
+.bootstrap-select.btn-group > .disabled: focus  {
+    
+  outline:  none !important;
+    
+}
+.bootstrap-select.btn-group .btn .filter-option  {
+    
+  display:  inline-block;
+    
+  overflow:  hidden;
+    
+  width:  100%;
+    
+  text-align:  left;
+    
+}
+.bootstrap-select.btn-group .btn .caret  {
+    
+  position:  absolute;
+    
+  top:  50%;
+    
+  right:  12px;
+    
+  margin-top:  -2px;
+    
+  vertical-align:  middle;
+    
+}
+.bootstrap-select.btn-group[class*="col-"] .btn  {
+    
+  width:  100%;
+    
+}
+.bootstrap-select.btn-group .dropdown-menu  {
+    
+  min-width:  100%;
+    
+  z-index:  1035;
+    
+  -webkit-box-sizing:  border-box;
+    
+     -moz-box-sizing:  border-box;
+    
+          box-sizing:  border-box;
+    
+}
+.bootstrap-select.btn-group .dropdown-menu.inner  {
+    
+  position:  static;
+    
+  border:  0;
+    
+  padding:  0;
+    
+  margin:  0;
+    
+  border-radius:  0;
+    
+  -webkit-box-shadow:  none;
+    
+          box-shadow:  none;
+    
+}
+.bootstrap-select.btn-group .dropdown-menu li  {
+    
+  position:  relative;
+    
+}
+.bootstrap-select.btn-group .dropdown-menu li: not(.disabled) a:hover small, 
+.bootstrap-select.btn-group .dropdown-menu li:not(.disabled) a:focus small, 
+.bootstrap-select.btn-group .dropdown-menu li.active:not(.disabled) a small  {
+    
+  color:  #64b1d8;
+    
+  color:  rgba(100,  177,  216,  0.4);
+    
+}
+.bootstrap-select.btn-group .dropdown-menu li.disabled a  {
+    
+  cursor:  not-allowed;
+    
+}
+.bootstrap-select.btn-group .dropdown-menu li a  {
+    
+  cursor:  pointer;
+    
+}
+.bootstrap-select.btn-group .dropdown-menu li a.opt  {
+    
+  position:  relative;
+    
+  padding-left:  2.25em;
+    
+}
+.bootstrap-select.btn-group .dropdown-menu li a span.check-mark  {
+    
+  display:  none;
+    
+}
+.bootstrap-select.btn-group .dropdown-menu li a span.text  {
+    
+  display:  inline-block;
+    
+}
+.bootstrap-select.btn-group .dropdown-menu li small  {
+    
+  padding-left:  0.5em;
+    
+}
+.bootstrap-select.btn-group .dropdown-menu .notify  {
+    
+  position:  absolute;
+    
+  bottom:  5px;
+    
+  width:  96%;
+    
+  margin:  0 2%;
+    
+  min-height:  26px;
+    
+  padding:  3px 5px;
+    
+  background:  #f5f5f5;
+    
+  border:  1px solid #e3e3e3;
+    
+  -webkit-box-shadow:  inset 0 1px 1px rgba(0,  0,  0,  0.05);
+    
+          box-shadow:  inset 0 1px 1px rgba(0,  0,  0,  0.05);
+    
+  pointer-events:  none;
+    
+  opacity:  0.9;
+    
+  -webkit-box-sizing:  border-box;
+    
+     -moz-box-sizing:  border-box;
+    
+          box-sizing:  border-box;
+    
+}
+.bootstrap-select.btn-group .no-results  {
+    
+  padding:  3px;
+    
+  background:  #f5f5f5;
+    
+  margin:  0 5px;
+    
+}
+.bootstrap-select.btn-group.fit-width .btn .filter-option  {
+    
+  position:  static;
+    
+}
+.bootstrap-select.btn-group.fit-width .btn .caret  {
+    
+  position:  static;
+    
+  top:  auto;
+    
+  margin-top:  -1px;
+    
+}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark  {
+    
+  position:  absolute;
+    
+  display:  inline-block;
+    
+  right:  15px;
+    
+  margin-top:  5px;
+    
+}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li a span.text  {
+    
+  margin-right:  34px;
+    
+}
+.bootstrap-select.show-menu-arrow.open > .btn  {
+    
+  z-index:  1035 + 1;
+    
+}
+.bootstrap-select.show-menu-arrow .dropdown-toggle: before  {
+    
+  content:  '';
+    
+  border-left:  7px solid transparent;
+    
+  border-right:  7px solid transparent;
+    
+  border-bottom-width:  7px;
+    
+  border-bottom-style:  solid;
+    
+  border-bottom-color:  #cccccc;
+    
+  border-bottom-color:  rgba(204,  204,  204,  0.2);
+    
+  position:  absolute;
+    
+  bottom:  -4px;
+    
+  left:  9px;
+    
+  display:  none;
+    
+}
+.bootstrap-select.show-menu-arrow .dropdown-toggle: after  {
+    
+  content:  '';
+    
+  border-left:  6px solid transparent;
+    
+  border-right:  6px solid transparent;
+    
+  border-bottom:  6px solid white;
+    
+  position:  absolute;
+    
+  bottom:  -4px;
+    
+  left:  10px;
+    
+  display:  none;
+    
+}
+.bootstrap-select.show-menu-arrow.dropup .dropdown-toggle: before  {
+    
+  bottom:  auto;
+    
+  top:  -3px;
+    
+  border-bottom:  0;
+    
+  border-top-width:  7px;
+    
+  border-top-style:  solid;
+    
+  border-top-color:  #cccccc;
+    
+  border-top-color:  rgba(204,  204,  204,  0.2);
+    
+}
+.bootstrap-select.show-menu-arrow.dropup .dropdown-toggle: after  {
+    
+  bottom:  auto;
+    
+  top:  -3px;
+    
+  border-top:  6px solid white;
+    
+  border-bottom:  0;
+    
+}
+.bootstrap-select.show-menu-arrow.pull-right .dropdown-toggle: before  {
+    
+  right:  12px;
+    
+  left:  auto;
+    
+}
+.bootstrap-select.show-menu-arrow.pull-right .dropdown-toggle: after  {
+    
+  right:  13px;
+    
+  left:  auto;
+    
+}
+.bootstrap-select.show-menu-arrow.open > .dropdown-toggle: before, 
+.bootstrap-select.show-menu-arrow.open > .dropdown-toggle:after  {
+    
+  display:  block;
+    
+}
+.bs-searchbox, 
+.bs-actionsbox  {
+    
+  padding:  4px 8px;
+    
+}
+.bs-actionsbox  {
+    
+  float:  left;
+    
+  width:  100%;
+    
+  -webkit-box-sizing:  border-box;
+    
+     -moz-box-sizing:  border-box;
+    
+          box-sizing:  border-box;
+    
+}
+.bs-actionsbox .btn-group button  {
+    
+  width:  50%;
+    
+}
+.bs-searchbox + .bs-actionsbox  {
+    
+  padding:  0 8px 4px;
+    
+}
+.bs-searchbox input.form-control  {
+    
+  margin-bottom:  0;
+    
+  width:  100%;
+    
+}
+.mobile-device  {
+    
+  position:  absolute;
+    
+  top:  0;
+    
+  left:  0;
+    
+  display:  block !important;
+    
+  width:  100%;
+    
+  height:  100% !important;
+    
+  opacity:  0;
+    
+}
+/*# sourceMappingURL=bootstrap-select.css.map */
