@@ -415,6 +415,8 @@ function getQueryStringParam(paramName) {
           var obj, checked, isMultiple, val, ids, idArr, kind, resolved;
           if (type === "single") {
             return i.find("input").val();
+          } else if (type === "number") {
+            return parseFloat(i.find("input").val());
           } else if (type === "radioButtons") {
             return i.find("input:checked").val();
           } else if (type === "dropdown") {
@@ -796,7 +798,7 @@ function getQueryStringParam(paramName) {
           }
           val = listData[field];
           if (val) {
-            if (type === "single") {
+            if (type === "single" || type === "number") {
               customField.find("input").val(val);
             } else if (type === "radioButtons") {
               customField.find("input[value='" + val + "']").prop("checked", true);
