@@ -1,7 +1,5 @@
 # SPCustomForm
 
-SPCustomForm
-
 Overview
 
 SPCustomForm is a preliminary attempt at an MVC framewok for boring SharePoint forms, written as a jQuery plug-in.
