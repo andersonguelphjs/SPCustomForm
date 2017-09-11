@@ -2,13 +2,19 @@
 
 Overview
 
-SPCustomForm is a preliminary attempt at an MVC framewok for boring SharePoint forms, written as a jQuery plug-in.
+SPCustomForm is an MVC framewok for boring SharePoint forms, written as a jQuery plug-in.
 
-As plug-in parameters, you can supply and thus interchange the html, css and js to an existing sharepoint list.
+SPCustomForm allows you to skin your form with your html, css and js to an existing sharepoint list.
+
+SPCustomForm will create a 2-column Bootstrap form if you don't provide html.
 
 SPCustomForm will handle CRUD operations and attachments
 
-SPCustomForm supports most field types including user, multi-user, lookup and multilookup
+SPCustomForm supports all OOTB field types including user, multi-user, multilookup
+
+SPCustomForm can print the form to PDF
+
+SPCustomForm can toggle between Display and Edit
 
 
 How to:
