@@ -1,5 +1,5 @@
 ﻿(function ($, document, window, undefined) {
-//stole this somewhere; if it was you, let me know and I can credit ya
+
     $.fn.spHtmlEditor = function (opts) {
 
         if (opts && (opts == "gethtml" || opts.method == "gethtml")) {
@@ -159,15 +159,15 @@
 
         var p = path || "/_layouts/15/",
 			spVersion = parseInt(_spPageContextInfo.siteClientTag.match(/\$\$(\d{2})\./i)[1], 10);
-
+			
         if (spVersion >= 16 && (typeof (g_all_modules) == "undefined"
             || typeof (g_all_modules["ms.rte.js"]) == "undefined")
             && $("#msrtejs").length == 0) {
-
+            
             $('<script id="msrtejs" type="text/javascript" src="' + p + 'ms.rte.js">' + '</' + 'script>').appendTo("body");
 
 	        ExecuteOrDelayUntilScriptLoaded(function () {
-	        	loadUi();
+	        	loadUi();	
 	        }, "ms.rte.js");
 
         } else {
@@ -180,11 +180,11 @@
 				|| typeof (g_all_modules["sp.ui.rte.js"]) == "undefined")
 				&& $("#spuirtejs").length == 0)
 	            $('<script id="spuirtejs" type="text/javascript" src="' + p + 'sp.ui.rte.js">' + '</' + 'script>').appendTo("body");
-
+	
 	        ExecuteOrDelayUntilScriptLoaded(function () {
 	            ready();
 	        }, "sp.ui.rte.js");
-
+	        
 		}
 
     }
@@ -214,7 +214,7 @@
 
         _ribbonStartInit("Ribbon.Read", false, null);
 
-		SP.SOD.executeOrDelayUntilScriptLoaded(function() {
+		SP.SOD.executeOrDelayUntilScriptLoaded(function() {      
 		    if (!SP.Ribbon.PageManager.get_instance().get_ribbon())
 		        _ribbonStartInit("Ribbon.Read", false, null);
 		}, 'sp.ribbon.js');

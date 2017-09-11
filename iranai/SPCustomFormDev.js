@@ -47,6 +47,37 @@ function getQueryStringParam(paramName) {
       messages.cannotSave = "Form cannot be saved.<br>The following required fields are empty:";
       messages.uploadFile = "Failed to upload a file!";
     }
+    
+	var initializeDatePickers = function () { 
+		var calendarOptions = [];
+		calendarOptions.push(_spPageContextInfo.webServerRelativeUrl + '/' + _spPageContextInfo.layoutsUrl + '/iframe.aspx?');
+		calendarOptions.push('&cal=1');
+		calendarOptions.push('&lcid=1033');
+		calendarOptions.push('&langid=1033');
+		calendarOptions.push('&tz=-08:00:00.0002046');
+		calendarOptions.push('&ww=0111110');
+		calendarOptions.push('&fdow=0');
+		calendarOptions.push('&fwoy=0');
+		calendarOptions.push('&hj=0');
+		calendarOptions.push('&swn=false');
+		calendarOptions.push('&minjday=109207');
+		calendarOptions.push('&maxjday=2666269');
+		calendarOptions.push('&date=');
+	
+		$('[field-type="DateTime"]').each(function (index) {
+			var id = $(this).attr('id');
+	
+			$(this).after('<iframe id="' + id + 'DatePickerFrame" title="Select a date from the calendar." style="display:none; position:absolute; width:200px; z-index:101;" src="/_layouts/15/images/blank.gif?rev=23"></iframe>');
+			$(this).after('<a href="#" style="vertical-align:top;"><img id="' + id + 'DatePickerImage" border="0" alt="Select a date from the calendar." src="/_layouts/15/images/calendar_25.gif?rev=23"></a>');
+			//$(this).next('a').attr('onclick', 'clickDatePicker("' + id + '", "' + calendarOptions.join('') + '", '', event); return false;');
+			$(this).next('a').on("click",function(){
+	
+		clickDatePicker(id, calendarOptions.join(''), '', event); 
+		return false;
+		})
+	
+		});
+	};
 
     function getJSDateFromSPDate(spDate) {
       //2014-09-30T04:00:00Z
@@ -266,7 +297,12 @@ function getQueryStringParam(paramName) {
       if (settings.includeControls) {
         var paperclipImg = settings.scriptFolder + "/paperclip.png";
         if (!settings.htmlData) {
-          html += "<tr><td class='col-md-6'></td><td class='col-md-6'><button type='button' class='btn btn-default testButton'>Test</button><button type='button' class='btn btn-default saveButton'>Save</button><button type='button' class='btn btn-default saveAndExitButton'>Save and Exit</button><button type='button' class='btn btn-default cancelButton'>Cancel</button>" +
+          html += "<tr><td class='col-md-6'></td><td class='col-md-6'>"+
+          "<button type='button' class='btn btn-default testButton'>Test</button>"+
+          "<button type='button' class='btn btn-default pdfButton'>Print to PDF</button>"+
+          "<button type='button' class='btn btn-default saveButton'>Save</button>"+
+          "<button type='button' class='btn btn-default saveAndExitButton'>Save and Exit</button>"+
+          "<button type='button' class='btn btn-default cancelButton'>Cancel</button>" +
             "<div class='attachmentsContainer'><img class='paperclip' src='" + paperclipImg + "'>" +
             "<input class='myAttachments' style='display:none;' type='file' fileread='run.AttachmentData' fileinfo='run.AttachmentInfo' /><div class='attachments'></div></div>";
         } else {
@@ -292,6 +328,22 @@ function getQueryStringParam(paramName) {
           getAttachments();
         }
         initEvents();//event handlers
+        setInterval(function () {//update security token
+                        $.ajax({
+                            url: _spPageContextInfo.webAbsoluteUrl + "/_api/contextinfo",
+                            method: "POST",
+                            headers: {
+                                "Accept": "application/json; odata=verbose"
+                            },
+                            success: function (data) {
+                                $('#__REQUESTDIGEST').val(data.d.GetContextWebInformation.FormDigestValue)
+                            },
+                            error: function (data, errorCode, errorMessage) {
+                                alert(errorMessage)
+                            }
+                        });
+                    }, 600000); //interval 10 minutes
+
         that.fadeIn();
       });
     };
@@ -477,7 +529,7 @@ function getQueryStringParam(paramName) {
             }
             return ids;
           } else if (type == "multiTextEnhanced") {
-            return i.find("[role='textbox']").html();
+            return i.find("[role='textbox']").eq(1).html();
           } else if (type == "multiText") {
             return i.find("textarea").val();
           } else if (type == "pplPicker") {
@@ -669,6 +721,10 @@ function getQueryStringParam(paramName) {
       that.find(".saveAndExitButton").on("click", function() {
         saveForm(true);
       });
+       that.find(".pdfButton").on("click", function() {
+        printPage();
+      });
+
       that.find(".cancelButton").on("click", function() {
         window.location = settings.goHereAfterSave;
       });
@@ -698,6 +754,138 @@ function getQueryStringParam(paramName) {
         $(this).closest(".dropdown-menu").attr("data-text", text).attr("data-id", idString).closest(".second").find(".textValue").text(text);
       });
     };
+ function printPage() {
+
+	  var strippedHtml;
+	  var imgSrc=[];
+	  var numImgs =0;
+	  var imgs;
+
+//get all the columns; in this case by targetting labels
+      var labels = that.find(".first");
+      var labelsLength = labels.length;
+
+//prepare the jsPDF table
+      var columns = [{title:"PDF",width:500}, {title:new Date().toLocaleDateString(),width:500}];
+      var data = [];
+
+//this function will get the data from any type of field
+      var getFieldValue = function(lab) {
+		var internalName  = lab.attr("data-internal-fieldname");
+		msg("internalName" +internalName);
+        var kind = String(lab.attr("data-fieldtypekind"));
+        var i = lab.closest("tr").find(".second");
+        i = that.find(".second[data-internal-fieldname='" + internalName + "']");
+        var hasControl = false;
+        if (kind==="2" || kind==="4") {
+          if (i.find("input").length > 0) {
+            return i.find("input").val();
+          }
+        } else if (kind==="6") {
+          if (i.find("select").length > 0) {
+            return i.find("select").val();
+          }
+          if (i.find("input[type='radio']").length > 0) {
+            return i.find("input[type='radio']:checked").val();
+          }
+        } else if (kind==="3") {
+          if (i.find("textarea").length > 0) {
+            return i.find("textarea").val();
+          }
+          if (i.find("span").length > 0) {
+          var j = i.clone();
+          j.find(".no-content").remove();
+          
+          imgs = j.find("img").each(function(){
+          numImgs++;
+          $(this).after(" (SEE FIGURE "+numImgs+") ");
+          //strippedHtml+=;
+          imgSrc.push($(this).attr("src"));
+          });
+          
+          var t = $.trim($("<div>").html(j.html()).text());
+          
+          return t.replace(/[^\u0000-\u007E]/g, "");
+          
+          }
+
+        } 
+         else if (kind==="15") {
+          if (i.find("input").length > 0) {
+            return i.find("input:checked").val();
+          }
+        }else if (kind==="20") {
+          if (i.find(".ms-entity-resolved").length > 0) {
+            return i.find(".ms-entity-resolved").map(function() {
+              return $(this).text();
+            }).get().join(','); //setTextTime
+
+          }
+          return "";
+        }
+        if (!hasControl) {
+          return i.text();
+        }
+        return "";
+
+      };
+msg("labels.le "+labels.length);
+msgObj(labels);
+//for each label:
+var doc = new jsPDF();
+      labels.each(function() {
+
+        var text = $(this).text();
+        var val = $.trim(getFieldValue($(this))) || "";
+        if (text && text.length > 35) {
+          text = text.substring(0, 35);
+        }
+         msg(" text:"+text+" val:"+val);
+//put into the array
+        data.push([text, val]);
+      });
+      msg("data");
+      msgObj(data)
+//create the PDF
+      
+      
+      doc.autoTable(columns, data, {theme: 'grid',styles :{ // Defaul style
+            lineWidth: 0.01,
+            lineColor: 0,
+            fillStyle: 'DF',            
+            valign: 'middle',
+            overflow: 'linebreak'
+        },columnStyles: {
+    0: {columnWidth: 60},
+    1: {columnWidth: 120}
+    // etc
+}});
+      //imgSrc.length=0;
+      if (imgSrc && imgSrc.length>0){
+      msg(imgSrc);
+      for (var i=0;i<imgSrc.length;i++){
+		 var img = new Image;
+	     img.crossOrigin = "";  // for demo as we are at different origin than image 
+		 img.src=imgSrc[i];
+		 img.myText = i+1;
+		 img.onload = function() {
+    	 doc.addPage();
+		 doc.text(15,15,"figure "+(this.myText)+" ");
+		 doc.addImage(this, 0, 20);
+	       if(--numImgs == 0)
+	        {
+	            doc.save("SPPDF.pdf");
+	        }
+	    };//addimage
+
+	    }//for
+	    }
+	    
+	    else{
+	     doc.save("SPPDF.pdf");
+	    }//if
+	    
+    }
 
     //may be associated data with a lookup so get it and place in html
     var getLookUpData = function(field, lookupName, isMultiple, list) {
@@ -744,7 +932,8 @@ function getQueryStringParam(paramName) {
     //call after basic html to activate complex field type
     var initFields = function() {
 
-      that.find(".datepicker").datepicker();
+      //that.find(".datepicker").datepicker();
+      initializeDatePickers();
       var ppl = that.find(".ppl");
       var lookups = that.find("span[name='lookup']");
       var multi = that.find("[name='multiTextEnhanced']");
@@ -934,7 +1123,10 @@ function getQueryStringParam(paramName) {
         }
         return h += "<span data-required='" + i.Required + "' class='customField' data-kind='" + i.TypeAsString + "' data-internal='" + i.InternalName + "' data-default='" + defaultValue + "' name='multiText' data-Title='" + i.Title + "'><textarea class='form-control' " + title + " /></span>";
       } else if (i.FieldTypeKind == 4) { //date time
-        return h += "<span data-required='" + i.Required + "' class='customField' data-kind='" + i.TypeAsString + "' data-internal='" + i.InternalName + "' data-default='" + defaultValue + "' name='dateTime' data-Title='" + i.Title + "'><input type='text' class='datepicker form-control' " + title + "></span>";
+        //return h += "<span data-required='" + i.Required + "' class='customField' data-kind='" + i.TypeAsString + "' data-internal='" + i.InternalName + "' data-default='" + defaultValue + "' name='dateTime' data-Title='" + i.Title + "'><input type='text' class='datepicker form-control' " + title + "></span>";
+      
+         return h += "<span data-required='" + i.Required + "' class='customField' data-kind='" + i.TypeAsString + "' data-internal='" + i.InternalName + "' data-default='" + defaultValue + "' name='dateTime' data-Title='" + i.Title + "'><input type='text' id='"+i.InternalName+"' field-type='DateTime' " + title + "></span>";
+
       } else if (i.FieldTypeKind == 6) { //choice
         if (i.jsonS.Field['@attributes'].Format == "RadioButtons") {
           h += "<span data-required='" + i.Required + "' class='customField' data-kind='" + i.TypeAsString + "' data-internal='" + i.InternalName + "' data-default='" + defaultValue + "' name='radioButtons' data-Title='" + i.Title + "'><div title=" + i.Title + ">";

@@ -1,5 +1,4 @@
-﻿
-$(document).ready(function() {
+﻿$(document).ready(function() {
 
   $(this).on("mouseover", ".first", function() {
 
