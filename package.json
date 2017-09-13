@@ -1,0 +1,35 @@
+{
+  "name": "spcustomform",
+  "version": "1.0.0",
+  "description": "MVC form creator for SharePoint",
+  "main": "putOnWebPage.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andersonguelphjs/SPCustomForm.git"
+  },
+  "keywords": [
+    "SharePoint",
+    "forms",
+    "MVC",
+    "JavaScript"
+  ],
+  "author": "Mark Paul Anderson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andersonguelphjs/SPCustomForm/issues"
+  },
+  "homepage": "https://github.com/andersonguelphjs/SPCustomForm#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^3.1.0"
+  }
+}
