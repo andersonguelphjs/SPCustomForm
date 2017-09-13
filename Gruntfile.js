@@ -9,8 +9,8 @@ module.exports = function(grunt) {
         separator: ';',
       },
       dist: {
-        src: ['src/*.js,src/js/*.js'],
-        dest: 'dist/built.js',
+        src: ['src/js/SPCustomForm.js'],
+        dest: 'dist/js/SPCustomForm.js',
       },
     },
     uglify: {
@@ -18,8 +18,8 @@ module.exports = function(grunt) {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
       build: {
-        src: 'dist/built.js',
-        dest: 'dist/built.min.js'
+        src: 'dist/js/SPCustomForm.js',
+        dest: 'dist/js/SPCustomForm.min.js'
       }
     },
     imagemin: {
