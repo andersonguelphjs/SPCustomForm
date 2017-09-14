@@ -1,3 +1,8 @@
+
+//--when not recognized by windows powershell
+//path=%PATH%;%APPDATA%\npm
+
+
 module.exports = function(grunt) {
 
   // Project configuration.
@@ -17,26 +22,20 @@ module.exports = function(grunt) {
       options: {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
-      files: [
-              {
-                expand: true,     // Enable dynamic expansion.
-                src: ['src/js/*.js'], // Actual pattern(s) to match.
-                dest: 'dist/js/',   // Destination path prefix.
-                ext: '.min.js',   // Dest filepaths will have this extension.
-                extDot: 'first'   // Extensions in filenames begin after the first dot
-              },
-            ],
-    },
-    imagemin: {
-      dynamic: {
+      dynamic_mappings: {
+        // Grunt will search for "**/*.js" under "lib/" when the "uglify" task
+        // runs and build the appropriate src-dest file mappings then, so you
+        // don't need to update the Gruntfile when files are added or removed.
         files: [{
-          expand: true,
-          cwd: 'images/',
-          src: ['img/*.{png,jpg,gif}'],
-          dest: 'images/build/'
-        }]
-      }
-    }
+          expand: true, // Enable dynamic expansion.
+          cwd: 'src/js/',
+          src: ['*.js'], // Actual pattern(s) to match.
+          dest: 'dist/js/', // Destination path prefix.
+          ext: '.min.js', // Dest filepaths will have this extension.
+          extDot: 'first' // Extensions in filenames begin after the first dot
+        }],
+      },
+    },
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -45,6 +44,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   // Default task(s).
-  grunt.registerTask('default', ['concat', 'uglify', 'imagemin']);
+  grunt.registerTask('default', ['concat', 'uglify']);
 
 };

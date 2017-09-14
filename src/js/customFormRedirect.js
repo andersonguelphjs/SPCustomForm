@@ -1,9 +1,3 @@
-<style>
-body{
-  display:none !important;
-}
-</style>
-<script>
 function getQueryStringParam(paramName) {
   //handle a url like such as : Form.aspx?&ID=1&listGuid=BD81C2B1-0178-4A7A-A54E-42B697C51F88
   var urlParams = [],
@@ -42,5 +36,3 @@ else if (url.indexOf("DispForm.aspx"!==-1)){
 }
 window.location=newUrl;
 console.log(_spPageContextInfo);
-
-</script>
