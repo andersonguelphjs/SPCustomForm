@@ -17,8 +17,8 @@
 <script src="/_layouts/15/autofill.js"></script>
 <script src="/_layouts/15/datepicker.js"></script>
 <script>
-//e.g.http://portal.iamgold.corp/sites/it/SP/SitePages/getCustomForm.aspx?&ID=1&listGuid=BD81C2B1-0178-4A7A-A54E-42B697C51F88
-//http://portal.iamgold.corp/sites/it/SP/SitePages/getCustomForm.aspx?&ID=14&listGuid=3EEA7575-EF94-44D6-B566-1275EB443AD3
+//e.g./sites/it/SP/SitePages/getCustomForm.aspx?&ID=1&listGuid=BD81C2B1-0178-4A7A-A54E-42B697C51F88
+///sites/it/SP/SitePages/getCustomForm.aspx?&ID=14&listGuid=3EEA7575-EF94-44D6-B566-1275EB443AD3
 function getQueryStringParam(paramName) {
   //handle a url like such as : Form.aspx?&ID=1&listGuid=BD81C2B1-0178-4A7A-A54E-42B697C51F88
   var urlParams = [],
@@ -37,20 +37,20 @@ function getQueryStringParam(paramName) {
   return urlParams[paramName];
 
 }
-//we make a page for each type of form 
+//we make a page for each type of form
 $("#spBootstrap").formify({
 scriptFolder :"/sites/it/Style Library/js/customForm/",//(required) folder of module
 listGuid : "E9545C83-A13C-4966-9EA9-BF2CBB8EDC8F",//getQueryStringParam("listGuid"), //(required) list GUID by query string or literal e.g. "3EEA7575-EF94-44D6-B566-1275EB443AD3"
 isEditForm : true, //Edit Form or Display Form; if not included will be false
 itemId : 3,
-displayArray:["email"], //make read only while not in array are editable//use internal names
-hiddenFields:["Mail2013","Attachments"],//use internal names
+//displayArray:["email"], //make read only while not in array are editable//use internal names
+//hiddenFields:["Mail2013","Attachments"],//use internal names
 adminId: 2,
 listTitle:"My Custom Form"
 //removeBoostrapCSS:true//,//getQueryStringParam("ID"), //if not included it is a New Form, can give literal as well
-//htmlUrl : "http://portal.iamgold.corp/sites/it/Style Library/js/customForm/example.html" //if not supplied, will use a 2 column bootstrap table; if supplied supply everything
-//cssUrl : "http://portal.iamgold.corp/sites/it/Style Library/js/customForm/example.css",//style your form
-//jsUrl : "http://portal.iamgold.corp/sites/it/Style Library/js/customForm/example.js"//add extra functionality
+//htmlUrl : "/sites/it/Style Library/js/customForm/example.html" //if not supplied, will use a 2 column bootstrap table; if supplied supply everything
+//cssUrl : "/sites/it/Style Library/js/customForm/example.css",//style your form
+//jsUrl : "/sites/it/Style Library/js/customForm/example.js"//add extra functionality
 })
 /*
 var modalUrl = settings.scriptFolder + "modal.html"; //change if you want

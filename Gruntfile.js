@@ -17,10 +17,15 @@ module.exports = function(grunt) {
       options: {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
-      build: {
-        src: 'dist/js/SPCustomForm.js',
-        dest: 'dist/js/SPCustomForm.min.js'
-      }
+      files: [
+              {
+                expand: true,     // Enable dynamic expansion.
+                src: ['src/js/*.js'], // Actual pattern(s) to match.
+                dest: 'dist/js/',   // Destination path prefix.
+                ext: '.min.js',   // Dest filepaths will have this extension.
+                extDot: 'first'   // Extensions in filenames begin after the first dot
+              },
+            ],
     },
     imagemin: {
       dynamic: {
